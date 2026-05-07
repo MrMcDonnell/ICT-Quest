@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>ICT Quest  -  Edexcel IGCSE Revision</title>
+<title>ICT Quest — Edexcel IGCSE Revision</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
 <style>
 :root{
   --navy:#0f1624;--navy2:#151e30;--navy3:#1c2840;--navy4:#243350;
@@ -15,8 +16,7 @@
   --purple:#7c3aed;--purple-light:#8b5cf6;
   --text:#f1f5f9;--text2:#cbd5e1;--text3:#94a3b8;--text4:#64748b;
   --border:#1e2d45;--border2:#243350;
-  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-  --mono:'Courier New',Courier,monospace;
+  --font:'Inter',sans-serif;--mono:'JetBrains Mono',monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--navy);color:var(--text);font-family:var(--font);min-height:100vh;overflow-x:hidden}
@@ -292,7 +292,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <p class="tagline">Edexcel IGCSE ICT Revision</p>
     <div class="exam-badge">📋 Exam Practice Tool</div>
     <input class="input-field" id="nameInput" type="text" placeholder="Enter your name..." maxlength="24" autocomplete="off"/>
-    <button class="btn-p" id="nameBtn">Let's go -></button>
+    <button class="btn-p" id="nameBtn">Let's go →</button>
   </div>
 </div>
 
@@ -333,11 +333,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <div class="ac-title">Revision Notes</div>
         <div class="ac-sub">Browse key definitions and facts from every chapter</div>
       </div>
-      <div class="action-card" onclick="goFlash()" style="grid-column:1/-1;border-color:rgba(124,58,237,0.3);background:rgba(124,58,237,0.05)">
-        <div class="ac-icon">🃏</div>
-        <div class="ac-title">Flashcards</div>
-        <div class="ac-sub">Rapid-fire key terms and definitions  -  perfect for last-minute revision before an exam</div>
-      </div>
     </div>
 
     <div class="section-title">Topics</div>
@@ -346,25 +341,25 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
         <div class="tov-num">Topic 1</div>
         <div class="tov-name">Digital Devices</div>
         <div class="tov-bar"><div class="tov-fill" id="tov-bar-t1" style="width:0%"></div></div>
-        <div class="tov-stats" id="tov-stat-t1">32 questions  -  tap to practise</div>
+        <div class="tov-stats" id="tov-stat-t1">32 questions — tap to practise</div>
       </div>
       <div class="tov-card tov2" onclick="goSetupTopic('t2')">
         <div class="tov-num">Topic 2</div>
         <div class="tov-name">Connectivity</div>
         <div class="tov-bar"><div class="tov-fill" id="tov-bar-t2" style="width:0%"></div></div>
-        <div class="tov-stats" id="tov-stat-t2">25 questions  -  tap to practise</div>
+        <div class="tov-stats" id="tov-stat-t2">25 questions — tap to practise</div>
       </div>
       <div class="tov-card tov3" onclick="goSetupTopic('t3')">
         <div class="tov-num">Topic 3</div>
         <div class="tov-name">Operating Online</div>
         <div class="tov-bar"><div class="tov-fill" id="tov-bar-t3" style="width:0%"></div></div>
-        <div class="tov-stats" id="tov-stat-t3">45 questions  -  tap to practise</div>
+        <div class="tov-stats" id="tov-stat-t3">45 questions — tap to practise</div>
       </div>
       <div class="tov-card tov4" onclick="goSetupTopic('t4')">
         <div class="tov-num">Topic 4</div>
         <div class="tov-name">Online Goods &amp; Services</div>
         <div class="tov-bar"><div class="tov-fill" id="tov-bar-t4" style="width:0%"></div></div>
-        <div class="tov-stats" id="tov-stat-t4">20 questions  -  tap to practise</div>
+        <div class="tov-stats" id="tov-stat-t4">20 questions — tap to practise</div>
       </div>
     </div>
   </div>
@@ -375,13 +370,13 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
   <div class="notes-inner">
     <div class="notes-header">
       <h2>📖 Revision Notes</h2>
-      <button class="btn-g" style="width:auto;padding:8px 14px" onclick="goLanding()"><- Back</button>
+      <button class="btn-g" style="width:auto;padding:8px 14px" onclick="goLanding()">← Back</button>
     </div>
     <div class="notes-topic-tabs">
-      <button class="ntab ntab1 active" onclick="showNotesTopic(1,this)">Topic 1  -  Digital Devices</button>
-      <button class="ntab ntab2" onclick="showNotesTopic(2,this)">Topic 2  -  Connectivity</button>
-      <button class="ntab ntab3" onclick="showNotesTopic(3,this)">Topic 3  -  Operating Online</button>
-      <button class="ntab ntab4" onclick="showNotesTopic(4,this)">Topic 4  -  Online Goods &amp; Services</button>
+      <button class="ntab ntab1 active" onclick="showNotesTopic(1,this)">Topic 1 — Digital Devices</button>
+      <button class="ntab ntab2" onclick="showNotesTopic(2,this)">Topic 2 — Connectivity</button>
+      <button class="ntab ntab3" onclick="showNotesTopic(3,this)">Topic 3 — Operating Online</button>
+      <button class="ntab ntab4" onclick="showNotesTopic(4,this)">Topic 4 — Online Goods &amp; Services</button>
     </div>
 
     <!-- TOPIC 1 NOTES -->
@@ -397,16 +392,16 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="ns-title">Key Devices</div>
             <div class="def-list">
               <div class="def-item"><span class="def-term">Mainframe</span><span class="def-desc">Large powerful computer that carries out complex tasks (e.g. statistical analysis) rapidly and can be used by <strong>many people simultaneously</strong></span></div>
-              <div class="def-item"><span class="def-term">Microprocessor</span><span class="def-desc">Controls what a computer does  -  takes data as input, processes it, gives an output. Found in washing machines, TVs, household appliances</span></div>
+              <div class="def-item"><span class="def-term">Microprocessor</span><span class="def-desc">Controls what a computer does — takes data as input, processes it, gives an output. Found in washing machines, TVs, household appliances</span></div>
               <div class="def-item"><span class="def-term">Single Board Computer</span><span class="def-desc">Affordable computers used in education, embedded computing and physical computing</span></div>
               <div class="def-item"><span class="def-term">Embedded Computing</span><span class="def-desc">Hardware fixed in position carrying out a specialist task (e.g. calculators). Opposite of physical computing</span></div>
               <div class="def-item"><span class="def-term">Physical Computing</span><span class="def-desc">Interactive systems that detect and respond to the surrounding environment (e.g. robotics)</span></div>
-              <div class="def-item"><span class="def-term">SIM Card</span><span class="def-desc"><strong>Subscriber Identity Module</strong>  -  identifies the device on the mobile phone network</span></div>
+              <div class="def-item"><span class="def-term">SIM Card</span><span class="def-desc"><strong>Subscriber Identity Module</strong> — identifies the device on the mobile phone network</span></div>
               <div class="def-item"><span class="def-term">Smartphone</span><span class="def-desc">Mobile phone with Wi-Fi, internet access, features of cameras and game consoles. More complex OS uses more energy so requires more frequent charging</span></div>
               <div class="def-item"><span class="def-term">Tablet</span><span class="def-desc">Slightly bigger than smartphones, carries out mostly the same functions</span></div>
               <div class="def-item"><span class="def-term">Convergence</span><span class="def-desc">When the designs of devices change so they become similar to another (e.g. laptops that flip into tablets)</span></div>
-              <div class="def-item"><span class="def-term">GPS</span><span class="def-desc"><strong>Global Positioning System</strong>  -  multiple satellites cross radio signals to pinpoint location. Does <strong>NOT</strong> need internet</span></div>
-              <div class="def-item"><span class="def-term">GIS</span><span class="def-desc"><strong>Geographical Information System</strong>  -  renders maps, roads, houses. <strong>DOES</strong> require internet</span></div>
+              <div class="def-item"><span class="def-term">GPS</span><span class="def-desc"><strong>Global Positioning System</strong> — multiple satellites cross radio signals to pinpoint location. Does <strong>NOT</strong> need internet</span></div>
+              <div class="def-item"><span class="def-term">GIS</span><span class="def-desc"><strong>Geographical Information System</strong> — renders maps, roads, houses. <strong>DOES</strong> require internet</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -438,9 +433,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">User Interfaces</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">CLI</span><span class="def-desc">Command Line Interface  -  typed commands. Complicated and inefficient</span></div>
+              <div class="def-item"><span class="def-term">CLI</span><span class="def-desc">Command Line Interface — typed commands. Complicated and inefficient</span></div>
               <div class="def-item"><span class="def-term">Menu-Driven</span><span class="def-desc">Choosing from a list menu (e.g. ATMs). May not give user exactly what they want</span></div>
-              <div class="def-item"><span class="def-term">GUI</span><span class="def-desc">Graphical User Interface  -  windows, icons, menus. Very effective but requires high storage</span></div>
+              <div class="def-item"><span class="def-term">GUI</span><span class="def-desc">Graphical User Interface — windows, icons, menus. Very effective but requires high storage</span></div>
               <div class="def-item"><span class="def-term">Voice-Driven</span><span class="def-desc">By speaking e.g. Siri</span></div>
               <div class="def-item"><span class="def-term">Gesture Interface</span><span class="def-desc">Swipes/finger movements. Suitable for people with low mobility</span></div>
             </div>
@@ -465,22 +460,22 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">Input Devices</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">OCR</span><span class="def-desc">Optical Character Recognition  -  scans text and numbers</span></div>
-              <div class="def-item"><span class="def-term">OMR</span><span class="def-desc">Optical Mark Recognition  -  scans marks e.g. MCQ exam papers</span></div>
+              <div class="def-item"><span class="def-term">OCR</span><span class="def-desc">Optical Character Recognition — scans text and numbers</span></div>
+              <div class="def-item"><span class="def-term">OMR</span><span class="def-desc">Optical Mark Recognition — scans marks e.g. MCQ exam papers</span></div>
               <div class="def-item"><span class="def-term">Linear Barcode</span><span class="def-desc">Found on food products. Scanned in one direction only</span></div>
               <div class="def-item"><span class="def-term">QR Code (Matrix)</span><span class="def-desc">Holds more information than linear. Can be scanned at any angle</span></div>
-              <div class="def-item"><span class="def-term">Microphone</span><span class="def-desc">Diaphragm moves when air hits it -> produces analogue electrical signal -> sound card converts to digital</span></div>
-              <div class="def-item"><span class="def-term">Touch Screen  -  Resistive</span><span class="def-desc">Force is applied by fingers to register input</span></div>
-              <div class="def-item"><span class="def-term">Touch Screen  -  Capacitive</span><span class="def-desc">Electrical signals are transferred from fingers to screen</span></div>
+              <div class="def-item"><span class="def-term">Microphone</span><span class="def-desc">Diaphragm moves when air hits it → produces analogue electrical signal → sound card converts to digital</span></div>
+              <div class="def-item"><span class="def-term">Touch Screen — Resistive</span><span class="def-desc">Force is applied by fingers to register input</span></div>
+              <div class="def-item"><span class="def-term">Touch Screen — Capacitive</span><span class="def-desc">Electrical signals are transferred from fingers to screen</span></div>
               <div class="def-item"><span class="def-term">Biometric Scanner</span><span class="def-desc">Iris (most secure), Fingerprint (arches/loops/whorls), Face, Voice. Advantages: easier, harder to trick, faster, no language barrier. Disadvantages: stores personal data, expensive, some feel uncomfortable</span></div>
-              <div class="def-item"><span class="def-term">Magnetic Strip Card</span><span class="def-desc">Least secure  -  no PIN required to read data</span></div>
+              <div class="def-item"><span class="def-term">Magnetic Strip Card</span><span class="def-desc">Least secure — no PIN required to read data</span></div>
               <div class="def-item"><span class="def-term">Programmable Chip</span><span class="def-desc">Data only readable when correct PIN entered</span></div>
               <div class="def-item"><span class="def-term">NFC / RFID</span><span class="def-desc">Wireless (e.g. Apple Pay). When scanned, ID is linked to database records</span></div>
               <div class="def-item"><span class="def-term">Sensors</span><span class="def-desc">Input data from physical environment. Benefits: safe in dangerous places, continuous monitoring, removes human error, easily analysed data</span></div>
             </div>
           </div>
           <div class="notes-section">
-            <div class="ns-title">Output Devices  -  Printers</div>
+            <div class="ns-title">Output Devices — Printers</div>
             <table class="compare-table">
               <tr><th>Type</th><th>Speed</th><th>Cost per copy</th><th>Quality</th><th>Notes</th></tr>
               <tr><td>Dot Matrix</td><td>Slowest</td><td>Cheapest</td><td>Lowest</td><td>Very loud. Can carbon print</td></tr>
@@ -495,9 +490,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
               <div class="def-item"><span class="def-term">Monitor</span><span class="def-desc">Quality affected by screen size, resolution, and energy efficiency</span></div>
               <div class="def-item"><span class="def-term">Plotter</span><span class="def-desc">Used by cartographers (map makers)</span></div>
               <div class="def-item"><span class="def-term">Data Projector</span><span class="def-desc">Quality depends on zoom, lens quality, light bulbs, resolution</span></div>
-              <div class="def-item"><span class="def-term">Speaker  -  Mono</span><span class="def-desc">Sound produced from one side</span></div>
-              <div class="def-item"><span class="def-term">Speaker  -  Stereo</span><span class="def-desc">Sound from two different sides</span></div>
-              <div class="def-item"><span class="def-term">Speaker  -  Surround</span><span class="def-desc">Sound from all different sides</span></div>
+              <div class="def-item"><span class="def-term">Speaker — Mono</span><span class="def-desc">Sound produced from one side</span></div>
+              <div class="def-item"><span class="def-term">Speaker — Stereo</span><span class="def-desc">Sound from two different sides</span></div>
+              <div class="def-item"><span class="def-term">Speaker — Surround</span><span class="def-desc">Sound from all different sides</span></div>
               <div class="def-item"><span class="def-term">Control Device</span><span class="def-desc">Components of a system that make something happen in real life</span></div>
             </div>
           </div>
@@ -510,7 +505,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <span class="ch-arrow">▾</span>
         </div>
         <div class="chapter-body">
-          <div class="key-point"><strong>Storage medium</strong> = what holds the data (e.g. DVD disc). <strong>Storage device</strong> = what reads it (e.g. DVD drive). Secondary storage is <strong>non-volatile</strong>  -  data is not lost when power is lost.</div>
+          <div class="key-point"><strong>Storage medium</strong> = what holds the data (e.g. DVD disc). <strong>Storage device</strong> = what reads it (e.g. DVD drive). Secondary storage is <strong>non-volatile</strong> — data is not lost when power is lost.</div>
           <div class="notes-section">
             <div class="ns-title">Hard Disk Structure</div>
             <div class="def-list">
@@ -542,7 +537,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           </div>
           <div class="notes-section">
             <div class="ns-title">Data Calculations</div>
-            <div class="key-point"><strong>8 bits = 1 byte</strong> | A nibble = 4 bits<br>1 KiB = 1024 bytes (2¹⁰) | 1 GiB = 1024³ bytes<br>GB = 1,000³ (decimal). GiB = 1024³ (binary  -  how computers measure)<br>Example: bits in 128 GiB = 128 × 8 × 1024³</div>
+            <div class="key-point"><strong>8 bits = 1 byte</strong> | A nibble = 4 bits<br>1 KiB = 1024 bytes (2¹⁰) | 1 GiB = 1024³ bytes<br>GB = 1,000³ (decimal). GiB = 1024³ (binary — how computers measure)<br>Example: bits in 128 GiB = 128 × 8 × 1024³</div>
           </div>
         </div>
       </div>
@@ -571,8 +566,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
               <tr><td>Desktop Publishing</td><td>Same as word processing but more complex with more features</td></tr>
               <tr><td>Database</td><td>Store data through queries, tables, forms and reports</td></tr>
               <tr><td>Web Authoring</td><td>Prepare HTML files for webservers/intranet</td></tr>
-              <tr><td>Image Editing</td><td>Edit graphics  -  add shapes, lines etc.</td></tr>
-              <tr><td>Photo Editing</td><td>Manipulate photos  -  recolour, add transparency, resize/rotate</td></tr>
+              <tr><td>Image Editing</td><td>Edit graphics — add shapes, lines etc.</td></tr>
+              <tr><td>Photo Editing</td><td>Manipulate photos — recolour, add transparency, resize/rotate</td></tr>
               <tr><td>Sound Editing</td><td>Adjust tone, tempo (speed), layers or mute files</td></tr>
               <tr><td>Project Management</td><td>Allocate tasks, track resources. Critical Path, Timeline, Milestones</td></tr>
               <tr><td>Control Applications</td><td>Home automation or areas where humans cannot work</td></tr>
@@ -606,11 +601,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             </div>
           </div>
           <div class="notes-section">
-            <div class="ns-title">Software Updates  -  reasons</div>
+            <div class="ns-title">Software Updates — reasons</div>
             <div class="tag-row">
               <span class="tag hl">Fix security vulnerabilities &amp; bugs</span><span class="tag hl">Introduce new features</span><span class="tag hl">Improve compatibility</span><span class="tag hl">Improve accessibility</span><span class="tag hl">Improve performance</span>
             </div>
-            <div class="key-point">⚠️ Backup before updating  -  there is a risk of data loss. Check all systems are compatible before updating.</div>
+            <div class="key-point">⚠️ Backup before updating — there is a risk of data loss. Check all systems are compatible before updating.</div>
           </div>
           <div class="notes-section">
             <div class="ns-title">Communication Software Comparison</div>
@@ -635,13 +630,13 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">Types of Memory</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">RAM</span><span class="def-desc"><strong>Volatile</strong>  -  data lost when power is lost. Stores programs currently in use. Bigger RAM = more files open without needing virtual memory</span></div>
-              <div class="def-item"><span class="def-term">Virtual Memory</span><span class="def-desc">Created when RAM is full. Secondary storage used instead. Processor fetches from secondary storage which is <strong>much slower</strong>  -  massively impacts performance</span></div>
-              <div class="def-item"><span class="def-term">ROM</span><span class="def-desc"><strong>Non-volatile</strong>  -  data kept when power is lost. Stores boot data on PCs or data for single-use computers (calculators, digital watches). Cannot normally be changed</span></div>
-              <div class="def-item"><span class="def-term">PROM</span><span class="def-desc">Programmable ROM  -  data can be <strong>written once only</strong></span></div>
-              <div class="def-item"><span class="def-term">EPROM</span><span class="def-desc">Erasable Programmable ROM  -  erased and rewritten using <strong>UV light</strong></span></div>
-              <div class="def-item"><span class="def-term">EEPROM</span><span class="def-desc">Electrically Erasable Programmable ROM  -  erased by applying <strong>high voltage to a pin</strong>. Developed into flash memory</span></div>
-              <div class="def-item"><span class="def-term">Flash Memory</span><span class="def-desc">A type of EEPROM. <strong>No moving parts</strong>  -  portable and low power consumption. Used in SSDs and SD cards</span></div>
+              <div class="def-item"><span class="def-term">RAM</span><span class="def-desc"><strong>Volatile</strong> — data lost when power is lost. Stores programs currently in use. Bigger RAM = more files open without needing virtual memory</span></div>
+              <div class="def-item"><span class="def-term">Virtual Memory</span><span class="def-desc">Created when RAM is full. Secondary storage used instead. Processor fetches from secondary storage which is <strong>much slower</strong> — massively impacts performance</span></div>
+              <div class="def-item"><span class="def-term">ROM</span><span class="def-desc"><strong>Non-volatile</strong> — data kept when power is lost. Stores boot data on PCs or data for single-use computers (calculators, digital watches). Cannot normally be changed</span></div>
+              <div class="def-item"><span class="def-term">PROM</span><span class="def-desc">Programmable ROM — data can be <strong>written once only</strong></span></div>
+              <div class="def-item"><span class="def-term">EPROM</span><span class="def-desc">Erasable Programmable ROM — erased and rewritten using <strong>UV light</strong></span></div>
+              <div class="def-item"><span class="def-term">EEPROM</span><span class="def-desc">Electrically Erasable Programmable ROM — erased by applying <strong>high voltage to a pin</strong>. Developed into flash memory</span></div>
+              <div class="def-item"><span class="def-term">Flash Memory</span><span class="def-desc">A type of EEPROM. <strong>No moving parts</strong> — portable and low power consumption. Used in SSDs and SD cards</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -679,10 +674,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">Network Types</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">LAN</span><span class="def-desc">Local Area Network  -  small geographical area (e.g. school)</span></div>
-              <div class="def-item"><span class="def-term">WAN</span><span class="def-desc">Wide Area Network  -  larger area than LAN. Internet is the largest WAN. WANs connect LANs to each other. Slower than LAN</span></div>
-              <div class="def-item"><span class="def-term">PAN</span><span class="def-desc">Personal Area Network  -  group of devices near one individual. WPAN = fully wireless version</span></div>
-              <div class="def-item"><span class="def-term">Tethering</span><span class="def-desc">Host device shares its mobile broadband (4G/5G) with another device. Bandwidth shared equally  -  both experience slowdowns</span></div>
+              <div class="def-item"><span class="def-term">LAN</span><span class="def-desc">Local Area Network — small geographical area (e.g. school)</span></div>
+              <div class="def-item"><span class="def-term">WAN</span><span class="def-desc">Wide Area Network — larger area than LAN. Internet is the largest WAN. WANs connect LANs to each other. Slower than LAN</span></div>
+              <div class="def-item"><span class="def-term">PAN</span><span class="def-desc">Personal Area Network — group of devices near one individual. WPAN = fully wireless version</span></div>
+              <div class="def-item"><span class="def-term">Tethering</span><span class="def-desc">Host device shares its mobile broadband (4G/5G) with another device. Bandwidth shared equally — both experience slowdowns</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -700,7 +695,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="def-list">
               <div class="def-item"><span class="def-term">How it works</span><span class="def-desc">Signals sent from device to satellite. Satellite sends them to the receiving device via antenna</span></div>
               <div class="def-item"><span class="def-term">Advantages</span><span class="def-desc">Not affected by power shortages. Accessible all the time</span></div>
-              <div class="def-item"><span class="def-term">Disadvantages</span><span class="def-desc">Affected by weather and atmospheric conditions. Cannot go through solid objects  -  not efficient in cities with tall buildings</span></div>
+              <div class="def-item"><span class="def-term">Disadvantages</span><span class="def-desc">Affected by weather and atmospheric conditions. Cannot go through solid objects — not efficient in cities with tall buildings</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -711,7 +706,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
               <tr><td>S/PDIF</td><td>Digital audio connections</td></tr>
               <tr><td>Minijack</td><td>Personal headphones</td></tr>
               <tr><td>USB</td><td>Storage transfer</td></tr>
-              <tr><td>Ethernet</td><td>Networking  -  a standard for computer communication</td></tr>
+              <tr><td>Ethernet</td><td>Networking — a standard for computer communication</td></tr>
             </table>
           </div>
           <div class="notes-section">
@@ -741,9 +736,9 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">Device Identification</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">IP Address</span><span class="def-desc"><strong>NOT fixed</strong>  -  changes with network. Assigned by DHCP. IPv4 = 8 numbers separated by dots. IPv6 = 8 groups of 4 hexadecimal characters separated by colons. IPv6 developed because devices grew faster than available IPv4 addresses</span></div>
-              <div class="def-item"><span class="def-term">MAC Address</span><span class="def-desc"><strong>Fixed</strong>  -  unique to device and its NIC. 6 pairs. <strong>First 3 pairs = manufacturer. Last 3 pairs = specific device</strong>. Used to identify/track devices and manage access rights</span></div>
-              <div class="def-item"><span class="def-term">Hexadecimal</span><span class="def-desc">Base-16 number system using digits 0 - 9 and letters A - F</span></div>
+              <div class="def-item"><span class="def-term">IP Address</span><span class="def-desc"><strong>NOT fixed</strong> — changes with network. Assigned by DHCP. IPv4 = 8 numbers separated by dots. IPv6 = 8 groups of 4 hexadecimal characters separated by colons. IPv6 developed because devices grew faster than available IPv4 addresses</span></div>
+              <div class="def-item"><span class="def-term">MAC Address</span><span class="def-desc"><strong>Fixed</strong> — unique to device and its NIC. 6 pairs. <strong>First 3 pairs = manufacturer. Last 3 pairs = specific device</strong>. Used to identify/track devices and manage access rights</span></div>
+              <div class="def-item"><span class="def-term">Hexadecimal</span><span class="def-desc">Base-16 number system using digits 0–9 and letters A–F</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -752,7 +747,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
               <div class="def-item"><span class="def-term">Router</span><span class="def-desc">Stores all connected devices' IP addresses. Forwards network traffic on the fastest route</span></div>
               <div class="def-item"><span class="def-term">Switch</span><span class="def-desc">Has many ports to connect devices with cables</span></div>
               <div class="def-item"><span class="def-term">Gateway</span><span class="def-desc">Connects LANs to WANs. Firewalls are found here</span></div>
-              <div class="def-item"><span class="def-term">WAP</span><span class="def-desc">Wireless Access Point  -  connects Wi-Fi devices to a wired network wirelessly. Often built into routers</span></div>
+              <div class="def-item"><span class="def-term">WAP</span><span class="def-desc">Wireless Access Point — connects Wi-Fi devices to a wired network wirelessly. Often built into routers</span></div>
               <div class="def-item"><span class="def-term">Booster</span><span class="def-desc">Amplifies network signal to cover larger distances</span></div>
               <div class="def-item"><span class="def-term">Server</span><span class="def-desc">Shares resources with connected devices (clients). Types: Authentication, Application, File, Print, Web</span></div>
             </div>
@@ -760,7 +755,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">Connecting to the Internet</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">ISP</span><span class="def-desc">Internet Service Provider  -  guarantees access to the telecommunications infrastructure</span></div>
+              <div class="def-item"><span class="def-term">ISP</span><span class="def-desc">Internet Service Provider — guarantees access to the telecommunications infrastructure</span></div>
               <div class="def-item"><span class="def-term">Web Browser</span><span class="def-desc">Takes requests and guarantees access to web servers</span></div>
               <div class="def-item"><span class="def-term">Search Engine</span><span class="def-desc">User enters keywords compared against a database of web pages. Returns most relevant results</span></div>
               <div class="def-item"><span class="def-term">Filter Software</span><span class="def-desc">Administrators control access to content by URL. Whitelist = allowed. Blacklist = denied. None = automatically whitelisted</span></div>
@@ -769,7 +764,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
           <div class="notes-section">
             <div class="ns-title">LAN Types &amp; Benefits</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">Peer-to-peer</span><span class="def-desc">Devices share resources directly  -  <strong>no server</strong></span></div>
+              <div class="def-item"><span class="def-term">Peer-to-peer</span><span class="def-desc">Devices share resources directly — <strong>no server</strong></span></div>
               <div class="def-item"><span class="def-term">Client-server</span><span class="def-desc">All devices (clients) connect to one central server</span></div>
             </div>
             <div class="key-point">Benefits of any LAN: shared files/storage, shared peripherals, easier communication, flexibility, better media usage, shared internet<br><br>Extra benefits of client-server: roaming profiles, centralised backup, admin control over access rights, shared applications</div>
@@ -778,19 +773,19 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="ns-title">Securing Data on a Network</div>
             <div class="def-list">
               <div class="def-item"><span class="def-term">Firewall</span><span class="def-desc">Found on gateways. Controls what can enter/leave the network</span></div>
-              <div class="def-item"><span class="def-term">Caesar Cipher</span><span class="def-desc">Shifts all data by a fixed number. <strong>Very easy to crack</strong>  -  weakest encryption</span></div>
+              <div class="def-item"><span class="def-term">Caesar Cipher</span><span class="def-desc">Shifts all data by a fixed number. <strong>Very easy to crack</strong> — weakest encryption</span></div>
               <div class="def-item"><span class="def-term">Symmetric Key</span><span class="def-desc">Same key used to encrypt and decrypt. Both parties must share this key</span></div>
               <div class="def-item"><span class="def-term">Public Key</span><span class="def-desc"><strong>Public key</strong> encrypts. <strong>Private key</strong> (recipient only) decrypts. Most secure</span></div>
-              <div class="def-item"><span class="def-term">WEP</span><span class="def-desc">Wireless Encryption Protocol  -  all data encrypted with same key. Easy for eavesdroppers to crack</span></div>
-              <div class="def-item"><span class="def-term">WPA</span><span class="def-desc">Wi-Fi Protected Access  -  updated WEP. Every device AND every data packet gets a unique key</span></div>
-              <div class="def-item"><span class="def-term">VPN</span><span class="def-desc">Virtual Private Network  -  encrypted tunnel for secure remote access to a LAN. Uses: secure payments, avoid surveillance, access work network from home, access geo-locked content</span></div>
+              <div class="def-item"><span class="def-term">WEP</span><span class="def-desc">Wireless Encryption Protocol — all data encrypted with same key. Easy for eavesdroppers to crack</span></div>
+              <div class="def-item"><span class="def-term">WPA</span><span class="def-desc">Wi-Fi Protected Access — updated WEP. Every device AND every data packet gets a unique key</span></div>
+              <div class="def-item"><span class="def-term">VPN</span><span class="def-desc">Virtual Private Network — encrypted tunnel for secure remote access to a LAN. Uses: secure payments, avoid surveillance, access work network from home, access geo-locked content</span></div>
               <div class="def-item"><span class="def-term">Transaction Logs</span><span class="def-desc">Track all data exchanges on the network</span></div>
               <div class="def-item"><span class="def-term">File Access Permissions</span><span class="def-desc">Control which users can access which files</span></div>
             </div>
           </div>
           <div class="notes-section">
             <div class="ns-title">Online Payments</div>
-            <div class="key-point">Card details required: <strong>Card Number, Card Security Code (CSC), Expiry Date, Cardholder Name</strong><br>Third-party processors: PayPal, BenefitPay<br>Contactless payment uses NFC and RFID  -  less secure as no PIN required</div>
+            <div class="key-point">Card details required: <strong>Card Number, Card Security Code (CSC), Expiry Date, Cardholder Name</strong><br>Third-party processors: PayPal, BenefitPay<br>Contactless payment uses NFC and RFID — less secure as no PIN required</div>
           </div>
         </div>
       </div>
@@ -820,7 +815,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
               <div class="def-item"><span class="def-term">Trojan</span><span class="def-desc">Appears legitimate but is actually stealing data, spying, or crashing the computer</span></div>
               <div class="def-item"><span class="def-term">Adware</span><span class="def-desc">Peppers the user with unwanted adverts to get them to part with money</span></div>
               <div class="def-item"><span class="def-term">Scareware</span><span class="def-desc">Takes the user to a page to purchase a fake security program</span></div>
-              <div class="def-item"><span class="def-term">Botnet</span><span class="def-desc">Infected devices used to spread malware. Installed on weakest devices  -  once infected they infect the rest of the network</span></div>
+              <div class="def-item"><span class="def-term">Botnet</span><span class="def-desc">Infected devices used to spread malware. Installed on weakest devices — once infected they infect the rest of the network</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -834,7 +829,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="ns-title">Protection Methods</div>
             <div class="def-list">
               <div class="def-item"><span class="def-term">Anti-malware / Anti-virus</span><span class="def-desc">Constantly checks files being downloaded against virus definitions. Matches are <strong>quarantined</strong>. Must be updated regularly</span></div>
-              <div class="def-item"><span class="def-term">CAPTCHA</span><span class="def-desc">Identifies whether user is human or computer. May use text, images or puzzles. <strong>reCAPTCHA</strong> uses extracts from books  -  typed data helps digitise eBooks</span></div>
+              <div class="def-item"><span class="def-term">CAPTCHA</span><span class="def-desc">Identifies whether user is human or computer. May use text, images or puzzles. <strong>reCAPTCHA</strong> uses extracts from books — typed data helps digitise eBooks</span></div>
               <div class="def-item"><span class="def-term">HTTPS</span><span class="def-desc">Hypertext Transfer Protocol Secure. Keeps communications private. Uses <strong>SSL</strong> (Secure Socket Layer) and <strong>TLS</strong> (Transport Layer Security)</span></div>
               <div class="def-item"><span class="def-term">Passwords</span><span class="def-desc">Must be: more than 8 characters, mix of letters/numbers/symbols, upper and lowercase, changed frequently, not easily guessable (e.g. not a birthday)</span></div>
             </div>
@@ -843,7 +838,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="ns-title">Backup Types</div>
             <table class="compare-table">
               <tr><th>Type</th><th>What is copied</th></tr>
-              <tr><td>Full Backup</td><td>ALL files  -  every time</td></tr>
+              <tr><td>Full Backup</td><td>ALL files — every time</td></tr>
               <tr><td>Differential Backup</td><td>Files changed since the last <strong>FULL</strong> backup only</td></tr>
               <tr><td>Incremental Backup</td><td>Files changed since the last <strong>previous backup (any type)</strong></td></tr>
             </table>
@@ -907,7 +902,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="ns-title">Impact on Organisations</div>
             <div class="def-list">
               <div class="def-item"><span class="def-term">Positive</span><span class="def-desc">Access to global markets and workforce, improved communication, ability to easily analyse large amounts of data</span></div>
-              <div class="def-item"><span class="def-term">Negative  -  Competition</span><span class="def-desc">Music retailers, DVD rental companies, estate agents, newspaper publishers and postal services have all been severely affected by internet competition</span></div>
+              <div class="def-item"><span class="def-term">Negative — Competition</span><span class="def-desc">Music retailers, DVD rental companies, estate agents, newspaper publishers and postal services have all been severely affected by internet competition</span></div>
             </div>
           </div>
           <div class="notes-section">
@@ -915,16 +910,16 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="def-list">
               <div class="def-item"><span class="def-term">Digital Divide</span><span class="def-desc">Gap between people with and without access to digital devices/internet. Causes: economy &amp; infrastructure, location, politics, religion, disability, social factors (income, age, education)</span></div>
               <div class="def-item"><span class="def-term">Information Rich</span><span class="def-desc">People with good access to information from communication technologies. Information poor = opposite</span></div>
-              <div class="def-item"><span class="def-term">Digital Footprint</span><span class="def-desc">All data a user creates online which is recorded and stored. Think carefully before posting  -  it can be accessed by anyone and easily shared</span></div>
+              <div class="def-item"><span class="def-term">Digital Footprint</span><span class="def-desc">All data a user creates online which is recorded and stored. Think carefully before posting — it can be accessed by anyone and easily shared</span></div>
             </div>
           </div>
           <div class="notes-section">
             <div class="ns-title">Impact of Less-Restricted Access to Networks on Society</div>
             <div class="def-list">
-              <div class="def-item"><span class="def-term">Media &amp; Representation</span><span class="def-desc">Improved  -  people freely voice their own opinions</span></div>
-              <div class="def-item"><span class="def-term">User-Generated Reference Sites</span><span class="def-desc">Risen (e.g. Wikipedia)  -  making truth and accuracy less reliable, limited experts/editors</span></div>
-              <div class="def-item"><span class="def-term">Monitoring of Social Networks</span><span class="def-desc">Adjusted  -  people can easily organise riots and strikes</span></div>
-              <div class="def-item"><span class="def-term">Police &amp; Moderation</span><span class="def-desc">Improved through CCTV  -  helps reduce crime rates</span></div>
+              <div class="def-item"><span class="def-term">Media &amp; Representation</span><span class="def-desc">Improved — people freely voice their own opinions</span></div>
+              <div class="def-item"><span class="def-term">User-Generated Reference Sites</span><span class="def-desc">Risen (e.g. Wikipedia) — making truth and accuracy less reliable, limited experts/editors</span></div>
+              <div class="def-item"><span class="def-term">Monitoring of Social Networks</span><span class="def-desc">Adjusted — people can easily organise riots and strikes</span></div>
+              <div class="def-item"><span class="def-term">Police &amp; Moderation</span><span class="def-desc">Improved through CCTV — helps reduce crime rates</span></div>
               <div class="def-item"><span class="def-term">Positive Movements</span><span class="def-desc">People gather for causes such as the Digital Humanitarian Movement</span></div>
             </div>
           </div>
@@ -951,7 +946,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             </div>
           </div>
           <div class="notes-section">
-            <div class="ns-title">Social Networking  -  Targeted Marketing</div>
+            <div class="ns-title">Social Networking — Targeted Marketing</div>
             <div class="key-point">1. Social networks store user data in databases and analyse it &rarr; 2. Sold to advertisers &rarr; 3. Advertisers target relevant sponsored posts based on age, gender, browsing history<br><br><strong>Analytics</strong> = information from data analysis. Used to find most effective communication methods<br><strong>Third-party integrations</strong> = links to social networks so people can easily share content</div>
           </div>
           <div class="notes-section">
@@ -1018,7 +1013,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
               <tr><th>Problem</th><th>Reason</th><th>Solution</th></tr>
               <tr><td>Power requirements</td><td>Power from non-renewable energy</td><td>Renewable resources, energy-efficient devices</td></tr>
               <tr><td>Data centre cooling systems</td><td>Use lots of non-renewable power</td><td>Build in cold environments</td></tr>
-              <tr><td>Poisonous substances (bromine, mercury, chlorine)</td><td>Leak when devices disposed irresponsibly  -  health risks</td><td>Education, recycling, laws, harmless alternatives</td></tr>
+              <tr><td>Poisonous substances (bromine, mercury, chlorine)</td><td>Leak when devices disposed irresponsibly — health risks</td><td>Education, recycling, laws, harmless alternatives</td></tr>
             </table>
           </div>
           <div class="notes-section">
@@ -1047,7 +1042,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="def-item"><span class="def-term">Secondary Source</span><span class="def-desc">Someone else owns the data and you are using it (e.g. radio programme, TV, books)</span></div>
           </div>
           <div class="notes-section">
-            <div class="ns-title">Evaluating Online Information  -  it must be:</div>
+            <div class="ns-title">Evaluating Online Information — it must be:</div>
             <div class="tag-row">
               <span class="tag hl">Accurate (not incomplete or false)</span><span class="tag hl">Not too old or too new</span><span class="tag hl">Relevant to topic</span><span class="tag hl">Reliable (matches other sources)</span><span class="tag hl">Not biased (both sides)</span>
             </div>
@@ -1134,20 +1129,20 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
             <div class="ns-title">Hosted vs Locally Installed Applications</div>
             <table class="compare-table">
               <tr><th></th><th>Hosted Application</th><th>Locally Installed</th></tr>
-              <tr><td>Internet needed?</td><td>Yes  -  only works online</td><td>No</td></tr>
-              <tr><td>Affected by bandwidth/latency?</td><td>Yes  -  affects loading time</td><td>No</td></tr>
-              <tr><td>Collaboration?</td><td>Yes  -  files on server, shared easily</td><td>Usually no</td></tr>
-              <tr><td>Uses device storage?</td><td>No  -  saves local space</td><td>Yes</td></tr>
+              <tr><td>Internet needed?</td><td>Yes — only works online</td><td>No</td></tr>
+              <tr><td>Affected by bandwidth/latency?</td><td>Yes — affects loading time</td><td>No</td></tr>
+              <tr><td>Collaboration?</td><td>Yes — files on server, shared easily</td><td>Usually no</td></tr>
+              <tr><td>Uses device storage?</td><td>No — saves local space</td><td>Yes</td></tr>
               <tr><td>Features?</td><td>Usually fewer features offered</td><td>Full features available</td></tr>
             </table>
             <div class="key-point">Example: Web-based Microsoft Word = hosted. Downloaded Microsoft Word = locally installed. Google Docs = hosted application</div>
           </div>
           <div class="notes-section">
-            <div class="ns-title">Online Data Storage  -  Benefits vs Drawbacks</div>
+            <div class="ns-title">Online Data Storage — Benefits vs Drawbacks</div>
             <table class="compare-table">
               <tr><th>Benefits</th><th>Drawbacks</th></tr>
               <tr><td>Automatic backup</td><td>Data protection issues</td></tr>
-              <tr><td>Scalable  -  can be expanded</td><td>Dependent on provider for security</td></tr>
+              <tr><td>Scalable — can be expanded</td><td>Dependent on provider for security</td></tr>
               <tr><td>Sharing data is easier</td><td>Slower transfer speeds</td></tr>
               <tr><td>Unlimited storage could be offered</td><td>Internet connection required</td></tr>
               <tr><td>Enables collaboration</td><td>Not all software available (e.g. Microsoft Access)</td></tr>
@@ -1161,51 +1156,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <button class="notes-quiz-btn" style="background:var(--amber)" onclick="goSetupTopic('t4')">🎮 Quiz me on Topic 4 &rarr;</button>
     </div>
 
-</div>
-
-<!-- FLASHCARDS -->
-<div id="flashScreen" style="display:none;position:fixed;inset:0;z-index:95;background:var(--navy);overflow-y:auto">
-  <div style="max-width:600px;margin:0 auto;padding:20px 20px 80px">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-top:8px;position:sticky;top:0;background:var(--navy);padding-bottom:12px;border-bottom:1px solid var(--border);z-index:10">
-      <h2 style="font-size:1.3rem;font-weight:700;letter-spacing:-0.3px">🃏 Flashcards</h2>
-      <button class="btn-g" style="width:auto;padding:8px 14px" onclick="goLanding()"><- Back</button>
-    </div>
-
-    <!-- Topic filter tabs -->
-    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px" id="flashTabs">
-      <button class="ntab ntab1 active" onclick="setFlashTopic('all',this)" style="font-size:0.72rem">All Topics</button>
-      <button class="ntab ntab1" onclick="setFlashTopic('t1',this)" style="font-size:0.72rem">Topic 1</button>
-      <button class="ntab ntab2" onclick="setFlashTopic('t2',this)" style="font-size:0.72rem">Topic 2</button>
-      <button class="ntab ntab3" onclick="setFlashTopic('t3',this)" style="font-size:0.72rem">Topic 3</button>
-      <button class="ntab ntab4" onclick="setFlashTopic('t4',this)" style="font-size:0.72rem">Topic 4</button>
-    </div>
-
-    <!-- Progress -->
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
-      <div style="flex:1;height:3px;background:var(--navy3);border-radius:999px;overflow:hidden">
-        <div id="flashProg" style="height:100%;background:linear-gradient(90deg,var(--purple),var(--blue-light));border-radius:999px;transition:width 0.4s;width:0%"></div>
-      </div>
-      <div style="font-size:0.65rem;color:var(--text4);font-family:var(--mono);white-space:nowrap" id="flashCount">1 / 1</div>
-    </div>
-
-    <!-- Card -->
-    <div id="flashCard" style="background:var(--navy2);border:1px solid var(--border);border-radius:18px;padding:28px 24px;min-height:220px;cursor:pointer;transition:all 0.2s;margin-bottom:14px;position:relative;user-select:none" onclick="flipCard()">
-      <div style="font-size:0.6rem;font-weight:700;color:var(--text4);text-transform:uppercase;letter-spacing:2px;font-family:var(--mono);margin-bottom:14px" id="flashSide">TAP TO REVEAL DEFINITION</div>
-      <div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px" id="flashTopic" class="qlbl tl1"></div>
-      <div style="font-size:1.2rem;font-weight:700;letter-spacing:-0.3px;line-height:1.4;color:var(--text)" id="flashTerm"></div>
-      <div style="font-size:0.88rem;color:var(--text2);line-height:1.7;margin-top:14px;display:none" id="flashDef"></div>
-      <div style="position:absolute;bottom:16px;right:18px;font-size:0.65rem;color:var(--text4);font-family:var(--mono)">tap to flip</div>
-    </div>
-
-    <!-- Controls -->
-    <div style="display:flex;gap:8px">
-      <button onclick="flashNav(-1)" style="flex:1;padding:11px;background:var(--navy3);border:1px solid var(--border);border-radius:10px;color:var(--text3);font-family:var(--font);font-weight:600;font-size:0.85rem;cursor:pointer;transition:all 0.15s" onmouseover="this.style.borderColor='var(--border2)'" onmouseout="this.style.borderColor='var(--border)'"><- Prev</button>
-      <button onclick="shuffleFlash()" style="padding:11px 16px;background:var(--navy3);border:1px solid var(--border);border-radius:10px;color:var(--text4);font-family:var(--font);font-weight:500;font-size:0.8rem;cursor:pointer;transition:all 0.15s" onmouseover="this.style.borderColor='var(--border2)'" onmouseout="this.style.borderColor='var(--border)'">🔀 Shuffle</button>
-      <button onclick="flashNav(1)" style="flex:1;padding:11px;background:var(--purple);border:none;border-radius:10px;color:#fff;font-family:var(--font);font-weight:600;font-size:0.85rem;cursor:pointer;transition:all 0.15s">Next -></button>
-    </div>
-
-    <div style="text-align:center;margin-top:14px;font-size:0.68rem;color:var(--text4);font-family:var(--mono)"><- -> arrow keys also work</div>
-  </div>
 </div>
 
 <!-- SETUP -->
@@ -1234,8 +1184,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <span class="tc-chip tc-fb">Fill in Blank</span>
       <span class="tc-chip tc-or">Sequence Order</span>
     </div>
-    <button class="btn-p" id="startBtn" onclick="startGame()">Start Session -></button>
-    <button class="btn-g" onclick="goLanding()"><- Back</button>
+    <button class="btn-p" id="startBtn" onclick="startGame()">Start Session →</button>
+    <button class="btn-g" onclick="goLanding()">← Back</button>
   </div>
 </div>
 
@@ -1263,7 +1213,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <div class="fb" id="fbB"><div class="fbt" id="fbT"></div><div class="fbe" id="fbE"></div></div>
       <div class="act-row">
         <button class="btn-hint" id="hintB">💡 Hint</button>
-        <button class="btn-skip" id="skipB">Skip  -  show answer</button>
+        <button class="btn-skip" id="skipB">Skip — show answer</button>
       </div>
     </div>
   </div>
@@ -1288,7 +1238,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
       <button class="btn-p" id="revBtn">📋 Review Wrong Answers</button>
       <button class="btn-p" id="agBtn" style="background:var(--teal)">Play Again</button>
       <button class="btn-g" id="chTBtn">Change Topics</button>
-      <button class="btn-g" id="chNBtn"><- Home</button>
+      <button class="btn-g" id="chNBtn">← Home</button>
     </div>
     <div class="sc-note">📸 Screenshot to share your score</div>
   </div>
@@ -1297,7 +1247,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 <!-- REVIEW -->
 <div id="revs">
   <div class="rev-in">
-    <div class="rev-hdr"><h2>📋 Answer Review</h2><button class="btn-g" style="width:auto;padding:8px 14px" id="bfR"><- Back to results</button></div>
+    <div class="rev-hdr"><h2>📋 Answer Review</h2><button class="btn-g" style="width:auto;padding:8px 14px" id="bfR">← Back to results</button></div>
     <div id="revL"></div>
   </div>
 </div>
@@ -1309,14 +1259,14 @@ var Q=[
 {t:'t1',d:1,type:'mc',q:'What is virtual memory?',o:['Extra RAM installed in a device','Storage used by the processor when RAM is full','A type of solid state drive','Memory stored in the cloud'],c:1,hint:'It is used when RAM runs out of space and results in slower performance.',explain:'<strong>Virtual memory</strong> is storage used by the processor once the space in RAM has run out. This results in much slower task execution because the processor must fetch data from secondary storage rather than the much faster RAM.'},
 {t:'t1',d:1,type:'mc',q:'What is convergence in relation to digital devices?',o:['When devices become faster over time','When the designs of devices change so they become similar to another','When devices connect to a network','When storage capacity increases'],c:1,hint:'Laptops that flip into tablets are an example of this.',explain:'<strong>Convergence</strong> is when the designs of devices change so that they become similar to another. For example, laptops can now flip to form tablets, and smartphones have absorbed the functions of cameras and game consoles.'},
 {t:'t1',d:1,type:'mc',q:'Which storage medium uses the shortest wavelength laser and stores the most data?',o:['CD','DVD','Blu-Ray','Flash Drive'],c:2,hint:'It also has scratch protection and stores 25 GB on one side.',explain:'<strong>Blu-Ray</strong> uses an even shorter wavelength of violet laser than DVD, allowing the highest data storage (25 GB one sided, 50 GB two sided). It also has scratch protection. DVDs use a red laser and hold 4.5 GB one sided.'},
-{t:'t1',d:1,type:'mc',q:'Which characteristic of RAM is correct?',o:['Non-volatile  -  data is kept when power is lost','Volatile  -  data is lost when power is lost','Stores permanent data only','Cannot be upgraded'],c:1,hint:'Think about what happens to unsaved work when a computer loses power.',explain:'RAM is <strong>volatile</strong>  -  meaning that when power is lost all data stored on it is also lost. This is why unsaved work disappears when a computer shuts down unexpectedly. ROM is non-volatile.'},
-{t:'t1',d:1,type:'mc',q:'What type of scanner is used to mark multiple choice exam papers?',o:['OCR  -  Optical Character Recognition','OMR  -  Optical Mark Recognition','QR barcode scanner','Biometric scanner'],c:1,hint:'It detects marks rather than reading text.',explain:'<strong>OMR (Optical Mark Recognition)</strong> scans marks making it ideal for multiple choice exam papers. OCR reads text and numbers. They serve different purposes.'},
+{t:'t1',d:1,type:'mc',q:'Which characteristic of RAM is correct?',o:['Non-volatile — data is kept when power is lost','Volatile — data is lost when power is lost','Stores permanent data only','Cannot be upgraded'],c:1,hint:'Think about what happens to unsaved work when a computer loses power.',explain:'RAM is <strong>volatile</strong> — meaning that when power is lost all data stored on it is also lost. This is why unsaved work disappears when a computer shuts down unexpectedly. ROM is non-volatile.'},
+{t:'t1',d:1,type:'mc',q:'What type of scanner is used to mark multiple choice exam papers?',o:['OCR — Optical Character Recognition','OMR — Optical Mark Recognition','QR barcode scanner','Biometric scanner'],c:1,hint:'It detects marks rather than reading text.',explain:'<strong>OMR (Optical Mark Recognition)</strong> scans marks making it ideal for multiple choice exam papers. OCR reads text and numbers. They serve different purposes.'},
 {t:'t1',d:1,type:'mc',q:'Which printer type is fastest and produces the highest quality output?',o:['Dot Matrix','Inkjet','Laser','3D Printer'],c:2,hint:'It works using a drum and electrical charge similar to a photocopier.',explain:'A <strong>laser printer</strong> is the fastest and produces the highest quality output. It works by a drum emitting an electrical charge. It has the highest upfront cost but medium cost per copy.'},
 {t:'t1',d:1,type:'typein',q:'What is the term for the time taken by the read/write head to locate the correct area on a hard disk platter?',a:'seek time',hint:'Two words. It describes the time to find the right location on the disk.',explain:'<strong>Seek time</strong> is the time taken by the read/write head to locate the correct area on the platter. A shorter seek time means the hard disk can access data faster.'},
 {t:'t1',d:1,type:'typein',q:'How many bits are in one byte?',a:'8',hint:'This is the most fundamental unit conversion in data storage.',explain:'There are <strong>8 bits</strong> in one byte. A bit is the smallest unit of data (0 or 1). A nibble is 4 bits. This is essential for data calculations in the exam.'},
 {t:'t1',d:1,type:'fitb',q:'Complete: GPS does not need an ___BLANK___ connection to work, but GIS does.',code:'GPS does not need an ___BLANK___ connection to work, but GIS does.',a:'internet',hint:'GPS uses satellite signals only. GIS needs to download map data.',explain:'<strong>GPS</strong> pinpoints your location using satellite signals and does NOT need an internet connection. <strong>GIS</strong> renders maps, roads and houses and DOES require an internet connection.'},
 {t:'t1',d:1,type:'fitb',q:'Complete: Hard disk platters change the ___BLANK___ on the disk surface to positive or negative to represent 0 or 1.',code:'Hard disk platters change the ___BLANK___ on the surface to represent binary.',a:'charge',hint:'Hard disks use magnetism to store data.',explain:'Hard disks change the <strong>charge</strong> (magnetic charge) on the platter surface to represent binary data. Positive or negative charge represents 0 or 1. The read/write head changes magnetic field to electric current when reading, and electric current to magnetic field when writing.'},
-{t:'t1',d:2,type:'mc',q:'A student has 4GB of RAM but has opened 16 Chrome tabs, Excel, PowerPoint and Word. What is most likely to happen?',o:['The computer will crash immediately','Virtual memory will be used causing slower performance for some applications','The RAM will automatically expand','The files will be automatically deleted'],c:1,hint:'RAM is full  -  where does excess data go?',explain:'When RAM is full <strong>virtual memory</strong> is created. An area of secondary storage is used instead of RAM. The processor fetches data from secondary storage which is much slower, causing noticeable performance delays especially with the programs moved out of RAM.'},
+{t:'t1',d:2,type:'mc',q:'A student has 4GB of RAM but has opened 16 Chrome tabs, Excel, PowerPoint and Word. What is most likely to happen?',o:['The computer will crash immediately','Virtual memory will be used causing slower performance for some applications','The RAM will automatically expand','The files will be automatically deleted'],c:1,hint:'RAM is full — where does excess data go?',explain:'When RAM is full <strong>virtual memory</strong> is created. An area of secondary storage is used instead of RAM. The processor fetches data from secondary storage which is much slower, causing noticeable performance delays especially with the programs moved out of RAM.'},
 {t:'t1',d:2,type:'mc',q:'What is the key difference between EPROM and EEPROM?',o:['EPROM is faster than EEPROM','EPROM is erased using UV light; EEPROM uses high voltage electricity','EEPROM stores more data than EPROM','EPROM is more expensive than EEPROM'],c:1,hint:'Think about the different methods used to erase each type.',explain:'<strong>EPROM</strong> (Erasable Programmable ROM) is erased using UV light exposure. <strong>EEPROM</strong> (Electrically Erasable Programmable ROM) is erased by applying high voltage to a certain pin. EEPROM eventually developed into flash memory.'},
 {t:'t1',d:2,type:'mc',q:'Why do SSDs access data faster than HDDs?',o:['SSDs have more storage platters','SSDs have no moving parts so there is no seek time','SSDs use a higher voltage to read data','SSDs are larger and can process more data at once'],c:1,hint:'Consider what physical process causes delays in an HDD.',explain:'SSDs have <strong>no moving parts</strong>. HDDs require a physical read/write head to locate data on spinning platters creating seek time. Since SSDs have no moving parts and no seek time they access data significantly faster. They are also more portable and energy efficient.'},
 {t:'t1',d:2,type:'mc',q:'Why do smartphones require charging more frequently than basic mobile phones?',o:['Smartphones have smaller batteries','The more complex operating system uses more energy','Smartphones have more RAM which drains power','Smartphones use more satellite connections'],c:1,hint:'What makes a smartphone fundamentally different in terms of software complexity?',explain:'Smartphones have a <strong>more complex operating system</strong> than basic mobile phones. This complexity means they use more energy resulting in faster battery drain and requiring more frequent charging.'},
@@ -1327,9 +1277,9 @@ var Q=[
   correctOrder:[0,1,2,3],
   hint:'The data exists first, then light is shone onto it, then detected and interpreted.',
   explain:'Optical media has <strong>tiny bumps</strong> on its surface representing 0s and 1s. A laser shines on the surface. The read head detects reflected light (1) or scattered light (0). This is how CDs, DVDs and Blu-Rays store and read binary data.'},
-{t:'t1',d:3,type:'mc',q:'A company is choosing between biometric scanners and PIN entry. Which correctly evaluates a disadvantage of biometrics?',o:['They are easier to trick than PINs','They store personal biometric data raising privacy concerns and cannot be changed if compromised','They require an internet connection to function','They are less accurate than PIN entry systems'],c:1,hint:'Think about what happens if biometric data is stolen  -  unlike a PIN it cannot be changed.',explain:'A key <strong>disadvantage of biometric scanners</strong> is that they store personal biometric information. Unlike a PIN which can be changed if compromised, biometric data such as fingerprints or iris patterns cannot be changed. This raises significant privacy and security concerns.'},
+{t:'t1',d:3,type:'mc',q:'A company is choosing between biometric scanners and PIN entry. Which correctly evaluates a disadvantage of biometrics?',o:['They are easier to trick than PINs','They store personal biometric data raising privacy concerns and cannot be changed if compromised','They require an internet connection to function','They are less accurate than PIN entry systems'],c:1,hint:'Think about what happens if biometric data is stolen — unlike a PIN it cannot be changed.',explain:'A key <strong>disadvantage of biometric scanners</strong> is that they store personal biometric information. Unlike a PIN which can be changed if compromised, biometric data such as fingerprints or iris patterns cannot be changed. This raises significant privacy and security concerns.'},
 {t:'t1',d:3,type:'order',q:'Order these from closest to hardware to end-user software:',
-  lines:[{text:'Operating System  -  controls the hardware directly',indent:0},{text:'Utility Software  -  maintains and configures the OS',indent:0},{text:'Defragmentation Tool  -  a specific utility that reorders disk data',indent:0},{text:'Application Software  -  helps users create content or complete tasks',indent:0}],
+  lines:[{text:'Operating System — controls the hardware directly',indent:0},{text:'Utility Software — maintains and configures the OS',indent:0},{text:'Defragmentation Tool — a specific utility that reorders disk data',indent:0},{text:'Application Software — helps users create content or complete tasks',indent:0}],
   correctOrder:[0,1,2,3],
   hint:'System software sits below application software. Within system software, the OS is below utilities.',
   explain:'The <strong>OS</strong> controls hardware directly. <strong>Utility software</strong> is a type of system software that maintains the OS. <strong>Defragmentation</strong> is a specific utility tool. <strong>Application software</strong> sits above all of this for end-user tasks.'},
@@ -1343,17 +1293,17 @@ var Q=[
 {t:'t2',d:1,type:'typein',q:'What does MAC stand for in the context of network addresses?',a:'Media Access Control',hint:'MAC addresses are physically fixed to a device\'s network interface card.',explain:'MAC stands for <strong>Media Access Control</strong>. A MAC address is fixed and unique to a device. The first three pairs identify the manufacturer and the last three pairs identify the specific device and its NIC.'},
 {t:'t2',d:1,type:'fitb',q:'Complete: Latency is the ___BLANK___ it takes data to travel between two devices.',code:'Latency is the ___BLANK___ it takes data to travel between two devices.',a:'time',hint:'High latency causes lag in online gaming and live video calls.',explain:'<strong>Latency</strong> is the time it takes data to travel between two devices. Low latency is desirable. High latency causes delays in real-time applications like video calls and online gaming.'},
 {t:'t2',d:1,type:'fitb',q:'Complete: A ___BLANK___ connects LANs to WANs and is where firewalls are commonly found.',code:'A ___BLANK___ connects LANs to WANs.',a:'gateway',hint:'It is the exit point from a local network to the wider internet.',explain:'A <strong>gateway</strong> connects LANs to WANs. It acts as the exit point from a local network to the wider internet. Firewalls are commonly placed at gateways to control incoming and outgoing traffic.'},
-{t:'t2',d:2,type:'mc',q:'What is the key difference between an IP address and a MAC address?',o:['IP addresses are fixed; MAC addresses change with the network','MAC addresses are fixed; IP addresses change depending on the network','Both are fixed and unique to a device','Both change depending on which network is used'],c:1,hint:'One is burned into the hardware, the other is assigned by the network.',explain:'<strong>MAC addresses are fixed</strong> and unique to a specific device. <strong>IP addresses are not fixed</strong>  -  they can be assigned dynamically by a DHCP server and change depending on which network is connected.'},
+{t:'t2',d:2,type:'mc',q:'What is the key difference between an IP address and a MAC address?',o:['IP addresses are fixed; MAC addresses change with the network','MAC addresses are fixed; IP addresses change depending on the network','Both are fixed and unique to a device','Both change depending on which network is used'],c:1,hint:'One is burned into the hardware, the other is assigned by the network.',explain:'<strong>MAC addresses are fixed</strong> and unique to a specific device. <strong>IP addresses are not fixed</strong> — they can be assigned dynamically by a DHCP server and change depending on which network is connected.'},
 {t:'t2',d:2,type:'mc',q:'Why was IPv6 developed to replace IPv4?',o:['IPv6 is faster than IPv4','The number of devices grew faster than available IPv4 addresses','IPv4 was less secure','IPv6 supports wireless connections unlike IPv4'],c:1,hint:'Consider how many devices are now connected to the internet globally.',explain:'<strong>IPv6 was developed</strong> because the number of devices connecting to the internet grew faster than available IPv4 addresses. IPv4 uses 8 numbers separated by dots. IPv6 uses 8 groups of 4 hexadecimal characters separated by colons, providing far more unique addresses.'},
 {t:'t2',d:2,type:'mc',q:'What is the difference between WEP and WPA wireless encryption?',o:['WEP uses a unique key per device; WPA uses one shared key','WPA uses a unique key per device and packet; WEP uses one shared key for all','WEP is newer and more secure than WPA','WPA does not encrypt data'],c:1,hint:'WPA is the updated more secure version of WEP.',explain:'<strong>WEP</strong> encrypts all data with one shared key making it easy to crack. <strong>WPA</strong> is more secure because every device has a unique key and every data packet is encrypted with a unique key, making it much harder to decrypt.'},
 {t:'t2',d:2,type:'mc',q:'What is the purpose of filter software in a school network?',o:['To speed up network connections','To allow administrators to block inappropriate or risky web content by URL','To encrypt data sent across the network','To manage printer queues'],c:1,hint:'Schools use whitelists and blacklists to control access.',explain:'<strong>Filter software</strong> allows administrators to control what content users can access. Sites can be added to a <strong>whitelist</strong> (allowed) or <strong>blacklist</strong> (denied). Sites not listed are automatically whitelisted. Filtering is done using the URL.'},
 {t:'t2',d:2,type:'typein',q:'What type of network connects personal devices near one individual, such as a phone, tablet and laptop on a desk?',a:'PAN',hint:'PAN = Personal Area Network.',explain:'A <strong>PAN (Personal Area Network)</strong> connects devices near an individual user. A WPAN (Wireless Personal Area Network) is when the network is fully wireless. Examples include Bluetooth-connected devices around one person.'},
 {t:'t2',d:2,type:'fitb',q:'Complete: In a client-server network, ___BLANK___ profiles allow users to log in to their account from any device on the network.',code:'___BLANK___ profiles allow login from any device on the network.',a:'roaming',hint:'Your account follows you around the network.',explain:'<strong>Roaming profiles</strong> allow users to log into their account from any device on the network and access their personal files, settings and software. This is a key benefit of client-server over peer-to-peer networks.'},
 {t:'t2',d:2,type:'order',q:'Order these encryption methods from least to most secure:',
-  lines:[{text:'Caesar Cipher  -  shifts all characters by a fixed number',indent:0},{text:'WEP  -  encrypts all network data with one shared key',indent:0},{text:'Symmetric Key Encryption  -  both parties share the same secret key',indent:0},{text:'Public Key Encryption  -  uses separate public and private keys',indent:0}],
+  lines:[{text:'Caesar Cipher — shifts all characters by a fixed number',indent:0},{text:'WEP — encrypts all network data with one shared key',indent:0},{text:'Symmetric Key Encryption — both parties share the same secret key',indent:0},{text:'Public Key Encryption — uses separate public and private keys',indent:0}],
   correctOrder:[0,1,2,3],
   hint:'Consider which is easiest to crack. A simple letter shift is weakest; asymmetric encryption is strongest.',
-  explain:'<strong>Caesar Cipher</strong> is weakest  -  a simple character shift. <strong>WEP</strong> uses one shared key easily intercepted. <strong>Symmetric encryption</strong> is stronger but the key must be shared. <strong>Public key encryption</strong> is most secure using two different keys  -  public to encrypt and private to decrypt.'},
+  explain:'<strong>Caesar Cipher</strong> is weakest — a simple character shift. <strong>WEP</strong> uses one shared key easily intercepted. <strong>Symmetric encryption</strong> is stronger but the key must be shared. <strong>Public key encryption</strong> is most secure using two different keys — public to encrypt and private to decrypt.'},
 {t:'t2',d:3,type:'mc',q:'A VPN is used by an employee working from home. Which best explains the security benefit?',o:['It speeds up the internet connection','It creates an encrypted tunnel allowing secure remote access to the LAN','It prevents the employee accessing personal websites','It replaces the need for a firewall'],c:1,hint:'Think about what makes home internet less secure than an office network.',explain:'A <strong>VPN (Virtual Private Network)</strong> creates an encrypted tunnel between the remote device and the organisation\'s LAN. This allows secure access to work resources as if physically in the office, protecting data from interception by unauthorised parties.'},
 {t:'t2',d:3,type:'mc',q:'Analyse why WAN transfer speeds are slower than LAN speeds.',o:['WANs use older technology than LANs','WANs cover larger geographical areas requiring data to travel further through more infrastructure','WANs are always wireless while LANs are wired','WANs use fewer routers than LANs'],c:1,hint:'Consider the physical distance and infrastructure data must pass through.',explain:'WANs are slower because they cover <strong>larger geographical areas</strong> requiring data to travel further through more infrastructure, multiple routers and potentially different ISPs. Greater distance increases latency and potential for congestion.'},
 
@@ -1363,7 +1313,7 @@ var Q=[
 {t:'t3',d:1,type:'mc',q:'What type of backup creates a copy of ALL files each time it runs?',o:['Incremental Backup','Differential Backup','Full Backup','Partial Backup'],c:2,hint:'It is the most complete but most time-consuming and storage-heavy type.',explain:'A <strong>Full Backup</strong> creates a copy of ALL files. An Incremental Backup copies only files changed since the last backup of any type. A Differential Backup copies files changed since the last full backup only.'},
 {t:'t3',d:1,type:'mc',q:'What does HTTPS provide that HTTP does not?',o:['Faster loading speeds','Private encrypted communications and security for user accounts','The ability to embed images on web pages','Compatibility with all browsers'],c:1,hint:'The S stands for Secure.',explain:'<strong>HTTPS (Hypertext Transfer Protocol Secure)</strong> keeps communications private and secure. It provides encryption using SSL (Secure Socket Layer) and TLS (Transport Layer Security) and authenticates the server users are connecting to.'},
 {t:'t3',d:1,type:'mc',q:'What is the Digital Divide?',o:['The difference in internet speeds between countries','The gap between people with access to digital devices and those without','The difference between digital and analogue technology','The gap between skilled and unskilled technology workers'],c:1,hint:'It is about unequal access to technology and the internet.',explain:'The <strong>Digital Divide</strong> is the gap between people who have access to digital devices and the internet and those who do not. Causes include social factors, location, politics, religion, disability and economic infrastructure.'},
-{t:'t3',d:1,type:'typein',q:'What is the name for malicious software that monitors all forms of communication and interaction on a device?',a:'spyware',hint:'Keyloggers are a specific example of this type of malware.',explain:'<strong>Spyware</strong> can monitor all forms of communication and interaction on a device. Keyloggers are a specific example  -  they record every keystroke allowing criminals to capture passwords and personal data without the user knowing.'},
+{t:'t3',d:1,type:'typein',q:'What is the name for malicious software that monitors all forms of communication and interaction on a device?',a:'spyware',hint:'Keyloggers are a specific example of this type of malware.',explain:'<strong>Spyware</strong> can monitor all forms of communication and interaction on a device. Keyloggers are a specific example — they record every keystroke allowing criminals to capture passwords and personal data without the user knowing.'},
 {t:'t3',d:1,type:'typein',q:'What is the name for the system that can identify whether a user is a human or a computer, often using distorted text or image puzzles?',a:'CAPTCHA',hint:'You complete this when creating accounts on websites.',explain:'<strong>CAPTCHA</strong> identifies whether a user is human or a bot. reCAPTCHA uses extracts from books and the typed data helps digitise eBooks. It prevents automated systems from abusing websites.'},
 {t:'t3',d:1,type:'fitb',q:'Complete: All the data a user creates online which is recorded and stored is called their digital ___BLANK___.',code:'All data a user creates online is their digital ___BLANK___.',a:'footprint',hint:'Everything you post or do online contributes to it.',explain:'A <strong>digital footprint</strong> is all the data a user creates online which is recorded and stored. Any content posted can be accessed by anyone on the internet which is why careful consideration before posting is important.'},
 {t:'t3',d:1,type:'fitb',q:'Complete: Passwords should be more than ___BLANK___ characters long to be considered secure.',code:'Passwords should be more than ___BLANK___ characters long.',a:'8',hint:'This is the minimum recommended length from the revision notes.',explain:'Passwords should be more than <strong>8 characters long</strong> and include a mix of letters, numbers and symbols, upper and lowercase letters, be changed frequently, and not be something guessable such as a birthday.'},
@@ -1373,11 +1323,11 @@ var Q=[
 {t:'t3',d:2,type:'typein',q:'What is the name for someone who gains unauthorised access to a network and remains within it monitoring activity silently?',a:'eavesdropper',hint:'They listen in on network traffic without being detected.',explain:'An <strong>eavesdropper</strong> gains unauthorised access to a network but remains within it monitoring or stalking it. WEP encryption is particularly vulnerable to eavesdroppers as all data uses one shared key which can be intercepted.'},
 {t:'t3',d:2,type:'fitb',q:'Complete: ___BLANK___ cookies are only stored until a webpage is closed.',code:'___BLANK___ cookies are only stored until the webpage is closed.',a:'Session',hint:'They exist only during a single browsing session.',explain:'<strong>Session cookies</strong> are only stored until a webpage is closed. Persistent cookies last longer and record internet use over time. Third party cookies are used by ad servers to personalise advertising.'},
 {t:'t3',d:2,type:'order',q:'Order these backup types from most to least data backed up per session after the initial full backup:',
-  lines:[{text:'Full Backup  -  copies ALL files every time',indent:0},{text:'Differential Backup  -  copies files changed since the last FULL backup',indent:0},{text:'Incremental Backup  -  copies only files changed since the last backup of any type',indent:0}],
+  lines:[{text:'Full Backup — copies ALL files every time',indent:0},{text:'Differential Backup — copies files changed since the last FULL backup',indent:0},{text:'Incremental Backup — copies only files changed since the last backup of any type',indent:0}],
   correctOrder:[0,1,2],
   hint:'Full always copies everything. Differential grows over time. Incremental is smallest each run.',
   explain:'A <strong>Full Backup</strong> always copies everything. A <strong>Differential Backup</strong> grows larger over time as more files change since the last full backup. An <strong>Incremental Backup</strong> is smallest each time as it only captures changes since the last backup of any type.'},
-{t:'t3',d:3,type:'mc',q:'Evaluate the most significant risk to an organisation when employees work from home.',o:['Employees may work fewer hours','Organisational data becomes more vulnerable when transferred outside the secure office network','Employees may not have fast enough internet at home','The organisation saves too much money on office costs'],c:1,hint:'Data leaving a secure network increases vulnerability.',explain:'The most significant risk is <strong>organisational data becoming more vulnerable</strong> when transferred outside the secure office network. Employees may share data via email, use VPNs, or store data on third-party servers  -  all increasing the risk of unauthorised access or interception.'},
+{t:'t3',d:3,type:'mc',q:'Evaluate the most significant risk to an organisation when employees work from home.',o:['Employees may work fewer hours','Organisational data becomes more vulnerable when transferred outside the secure office network','Employees may not have fast enough internet at home','The organisation saves too much money on office costs'],c:1,hint:'Data leaving a secure network increases vulnerability.',explain:'The most significant risk is <strong>organisational data becoming more vulnerable</strong> when transferred outside the secure office network. Employees may share data via email, use VPNs, or store data on third-party servers — all increasing the risk of unauthorised access or interception.'},
 {t:'t3',d:3,type:'mc',q:'Which best evaluates the impact of less-restricted internet access on society?',o:['It has only positive effects on society','It improves media representation but enables misinformation and makes monitoring of social networks more complex','It has made all information more reliable and accurate','It has significantly reduced crime rates overall'],c:1,hint:'Consider both positive and negative impacts simultaneously.',explain:'Less-restricted internet access has <strong>complex mixed impacts</strong>. Media representation improved as people freely voice opinions. However user-generated reference sites have made accuracy less reliable. Social networks allow organisation of both positive movements and riots. Police monitoring improved through CCTV. Both positive and negative impacts exist.'},
 
 {t:'t4',d:1,type:'mc',q:'What is transactional data?',o:['Data stored permanently on a server','Data that is sent between devices','Personal data stored in a database','Data encrypted using SSL'],c:1,hint:'It relates to exchanges of information between devices.',explain:'<strong>Transactional data</strong> is data sent between devices. It can be tracked and is usually stored in cookies. It includes transaction time and date, IP address, products viewed or bought, and items in shopping baskets.'},
@@ -1385,77 +1335,77 @@ var Q=[
 {t:'t4',d:1,type:'mc',q:'What is the difference between a session and a persistent cookie?',o:['Session cookies last longer than persistent cookies','Session cookies delete when the browser closes; persistent cookies remain and track usage over time','Both types last the same duration','Persistent cookies are more secure than session cookies'],c:1,hint:'One disappears when you close the tab.',explain:'<strong>Session cookies</strong> are deleted when the browser or webpage is closed. <strong>Persistent cookies</strong> record internet use over time, keep users logged in, and allow advertisers to track data across multiple visits.'},
 {t:'t4',d:1,type:'mc',q:'What is a hosted application?',o:['An application downloaded and installed on a local device','An application running on an online server requiring an internet connection','An application stored on a USB drive','An application installed on a school network server'],c:1,hint:'Google Docs is an example of this type.',explain:'A <strong>hosted application</strong> runs on an online server and requires an internet connection. Performance is affected by bandwidth and latency. Files are stored on the server enabling collaboration. Examples include Google Docs and web-based Microsoft Office.'},
 {t:'t4',d:1,type:'mc',q:'What does "the Cloud" refer to in ICT?',o:['A type of wireless network','The internet when used for providing software or storage rather than local devices','A network of GPS satellites','Encrypted government data storage'],c:1,hint:'It includes both hosted applications and online storage.',explain:'<strong>The Cloud</strong> refers to the internet when used to provide software or storage rather than local devices. Hosted applications and online storage are both cloud-based services. It enables collaboration and access from any connected device.'},
-{t:'t4',d:1,type:'typein',q:'What type of cookies personalise user experience through targeted marketing on websites with banner advertisements?',a:'third party cookies',hint:'They are placed by ad servers not the website itself.',explain:'<strong>Third party cookies</strong> personalise user experience through targeted marketing. Used on webpages with banner advertisements  -  if a user visits a page with banner ads from an ad server that server can store a cookie on the user\'s device.'},
+{t:'t4',d:1,type:'typein',q:'What type of cookies personalise user experience through targeted marketing on websites with banner advertisements?',a:'third party cookies',hint:'They are placed by ad servers not the website itself.',explain:'<strong>Third party cookies</strong> personalise user experience through targeted marketing. Used on webpages with banner advertisements — if a user visits a page with banner ads from an ad server that server can store a cookie on the user\'s device.'},
 {t:'t4',d:1,type:'fitb',q:'Complete: The Cloud refers to the internet when used for providing software or space to store information rather than ___BLANK___ storage.',code:'...rather than ___BLANK___ storage.',a:'local',hint:'The alternative to cloud storage is storing files on your own device.',explain:'The Cloud provides software or storage <strong>rather than local storage</strong>. Local storage refers to the device\'s own hard drive or SSD. Cloud storage benefits include automatic backup and collaboration but requires an internet connection.'},
 {t:'t4',d:1,type:'fitb',q:'Complete: ___BLANK___ cookies record information about a user\'s internet use over time and keep them logged in.',code:'___BLANK___ cookies record usage over time and keep users logged in.',a:'Persistent',hint:'They last beyond a single browsing session.',explain:'<strong>Persistent cookies</strong> record internet use over time and keep users logged in. Unlike session cookies which delete when the browser closes, persistent cookies remain on the device and allow advertisers to track data across visits.'},
 {t:'t4',d:2,type:'mc',q:'Compare hosted applications and locally installed software. Which is correct?',o:['Hosted applications are always faster','Local software needs no internet but uses device storage; hosted applications need internet but save local storage and enable collaboration','Local software allows collaboration; hosted applications do not','Hosted applications are always cheaper'],c:1,hint:'Think about when you can and cannot use each type and what trade-offs exist.',explain:'<strong>Local software</strong> needs no internet and is unaffected by bandwidth/latency but uses device storage. <strong>Hosted applications</strong> require internet, are affected by bandwidth/latency, but save local storage and enable collaborative working. Both have valid use cases.'},
 {t:'t4',d:2,type:'mc',q:'What is a drawback of online cloud storage?',o:['Cloud storage has very limited capacity','Cloud storage depends on the provider for security and requires an internet connection','Cloud storage cannot be used for collaboration','Cloud storage cannot store large files'],c:1,hint:'Consider security responsibility and access requirements.',explain:'Key drawbacks of <strong>cloud storage</strong> include dependence on the provider for security (data protection issues if the provider is breached), slower transfer speeds, requirement for an internet connection, and potential payment for expanding storage capacity.'},
 {t:'t4',d:2,type:'mc',q:'Why is contactless payment considered less secure than chip-and-PIN?',o:['Contactless uses outdated encryption','Contactless uses NFC/RFID and requires no PIN making unauthorised use easier','Contactless payments use no encryption','Contactless cards are physically weaker'],c:1,hint:'Consider what proof of authorisation is required for each method.',explain:'<strong>Contactless payment</strong> uses NFC and RFID and does not require a PIN. This means a lost or stolen card can be used without the owner\'s knowledge up to the contactless limit. Chip-and-PIN requires both card and PIN providing an extra security layer.'},
 {t:'t4',d:2,type:'mc',q:'How does targeted marketing work on social networking platforms?',o:['Social networks randomly assign adverts to users','Networks store and analyse user data, sell it to advertisers who target relevant sponsored posts','Social networks require users to opt-in to adverts','Social networks only use age to target adverts'],c:1,hint:'User data is the product being sold to advertisers.',explain:'<strong>Targeted marketing</strong>: social networks store and analyse user data, this data is sold to advertisers, advertisers use it to target relevant sponsored posts based on age, gender, browsing history and interests. Users can also pay to promote their own posts.'},
-{t:'t4',d:2,type:'fitb',q:'Complete: Online data storage is ___BLANK___, meaning its capacity can be increased as needed.',code:'Online storage is ___BLANK___  -  capacity can be increased as needed.',a:'scalable',hint:'It can grow with your requirements.',explain:'Online cloud storage is <strong>scalable</strong> meaning its capacity can be expanded to meet growing needs. This is a key advantage over local storage which has a fixed physical capacity. Expanding cloud storage often requires additional payment.'},
+{t:'t4',d:2,type:'fitb',q:'Complete: Online data storage is ___BLANK___, meaning its capacity can be increased as needed.',code:'Online storage is ___BLANK___ — capacity can be increased as needed.',a:'scalable',hint:'It can grow with your requirements.',explain:'Online cloud storage is <strong>scalable</strong> meaning its capacity can be expanded to meet growing needs. This is a key advantage over local storage which has a fixed physical capacity. Expanding cloud storage often requires additional payment.'},
 {t:'t4',d:2,type:'order',q:'Order these steps to describe how targeted marketing works on a social network:',
-  lines:[{text:'User interacts with content  -  likes posts and browsing history are recorded',indent:0},{text:'Social network analyses the data and builds a user profile',indent:0},{text:'User data and profile is sold to advertisers',indent:0},{text:'Advertisers display relevant sponsored content to the targeted user',indent:0}],
+  lines:[{text:'User interacts with content — likes posts and browsing history are recorded',indent:0},{text:'Social network analyses the data and builds a user profile',indent:0},{text:'User data and profile is sold to advertisers',indent:0},{text:'Advertisers display relevant sponsored content to the targeted user',indent:0}],
   correctOrder:[0,1,2,3],
   hint:'Data is collected, analysed, sold and then used to serve adverts back to the user.',
   explain:'Targeted marketing flow: user activity is <strong>recorded</strong>, the network <strong>analyses</strong> data to build a profile, the profile is <strong>sold to advertisers</strong>, and advertisers <strong>serve relevant adverts</strong> to the user based on their interests and attributes.'},
-{t:'t4',d:3,type:'mc',q:'Evaluate the impact of online services on organisations. Which best reflects both positive and negative impacts?',o:['Only positive  -  organisations always benefit from online services','Positive: global markets and improved communication. Negative: increased competition and changing security requirements','Only negative  -  security risks outweigh benefits','Positive: reduced costs only. Negative: reduced customer numbers'],c:1,hint:'Consider both new opportunities and new threats simultaneously.',explain:'Online services create both opportunities and challenges. <strong>Positive</strong>: access to global markets, global workforce, improved communication, big data insights. <strong>Negative</strong>: greatly increased competition (music retailers, DVD companies, estate agents affected) and changing data security requirements.'},
+{t:'t4',d:3,type:'mc',q:'Evaluate the impact of online services on organisations. Which best reflects both positive and negative impacts?',o:['Only positive — organisations always benefit from online services','Positive: global markets and improved communication. Negative: increased competition and changing security requirements','Only negative — security risks outweigh benefits','Positive: reduced costs only. Negative: reduced customer numbers'],c:1,hint:'Consider both new opportunities and new threats simultaneously.',explain:'Online services create both opportunities and challenges. <strong>Positive</strong>: access to global markets, global workforce, improved communication, big data insights. <strong>Negative</strong>: greatly increased competition (music retailers, DVD companies, estate agents affected) and changing data security requirements.'},
 {t:'t4',d:3,type:'mc',q:'Analyse why people become less patient as a result of using online services.',o:['People have less free time in modern life','People become conditioned to the immediate availability of information online reducing tolerance for delays','Social media encourages impatience in its design','Faster devices make people expect faster responses from everyone'],c:1,hint:'It relates to expectations set by digital services.',explain:'The internet conditions people to expect <strong>immediate availability of information</strong>. When news, shopping and answers can be accessed instantly people become less tolerant of delays in other areas. This is one of several negative impacts alongside isolation and reduced fact retention.'},
 
-//    T1 MISSING: Software licensing   
+// ── T1 MISSING: Software licensing ──
 {t:'t1',d:1,type:'mc',q:'What type of software licence allows users to view, edit and redistribute the source code freely?',o:['Proprietary Software','Freeware','Open-Source Software','Free Software'],c:2,hint:'The source code is made available so anyone can modify and redistribute it.',explain:'<strong>Open-Source Software</strong> makes everything available to the user including the source code. They can distribute it, make changes and resell it. This differs from Free Software which allows distribution but does not include the source code.'},
 {t:'t1',d:1,type:'mc',q:'What is proprietary software?',o:['Software that is always free to download','A licence where the user cannot distribute or edit the software under their own name','Software where the source code is publicly available','Software that can only run on one specific device'],c:1,hint:'Microsoft Office is an example.',explain:'<strong>Proprietary software</strong> is a licence where the user is not allowed to distribute or edit the software under their own name. Microsoft Office is a well-known example. Freeware is a type of proprietary software that is offered for free.'},
 {t:'t1',d:1,type:'typein',q:'What is the name for proprietary software that is offered completely free of charge to users?',a:'freeware',hint:'It is free but you cannot access or modify the source code.',explain:'<strong>Freeware</strong> is a type of proprietary software that is offered for free. Unlike open-source software, the source code is not available to users, meaning they cannot modify or redistribute it.'},
 
-//    T1 MISSING: Software updates   
-{t:'t1',d:1,type:'mc',q:'Which of the following is NOT a reason why software updates are carried out?',o:['To fix security vulnerabilities and bugs','To introduce new features','To improve compatibility','To permanently delete user data'],c:3,hint:'Updates improve software  -  they should never destroy your data on purpose.',explain:'Software updates are carried out to: fix security vulnerabilities and bugs, introduce new features, improve compatibility, improve accessibility and usability, and improve performance. Deleting user data is not a purpose of updates  -  though data loss is a risk, which is why backups should be made before updating.'},
+// ── T1 MISSING: Software updates ──
+{t:'t1',d:1,type:'mc',q:'Which of the following is NOT a reason why software updates are carried out?',o:['To fix security vulnerabilities and bugs','To introduce new features','To improve compatibility','To permanently delete user data'],c:3,hint:'Updates improve software — they should never destroy your data on purpose.',explain:'Software updates are carried out to: fix security vulnerabilities and bugs, introduce new features, improve compatibility, improve accessibility and usability, and improve performance. Deleting user data is not a purpose of updates — though data loss is a risk, which is why backups should be made before updating.'},
 
-//    T1 MISSING: Communication software   
+// ── T1 MISSING: Communication software ──
 {t:'t1',d:1,type:'mc',q:'What is the key difference between SMS and instant messaging?',o:['SMS requires an internet connection; instant messaging does not','SMS does not require an internet connection and has a 160 character limit; instant messaging requires internet and has no limit','Both require an internet connection','SMS can send images; instant messaging cannot'],c:1,hint:'SMS works on the mobile network. Instant messaging uses the internet.',explain:'<strong>SMS</strong> does not require an internet connection, has a 160 character limit, and cannot send images or files. <strong>Instant messaging</strong> requires an internet connection, has no character limit, can send files and images, and has extra features like read receipts and activity status.'},
 {t:'t1',d:1,type:'mc',q:'What can MMS do that SMS cannot?',o:['Send messages without an internet connection','Send images, audio and files, and exceed 160 characters','Work without a SIM card','Guarantee message delivery'],c:1,hint:'MMS stands for Multimedia Messaging Service.',explain:'<strong>MMS (Multimedia Messaging Service)</strong> can send images, audio files and attachments, and can exceed 160 characters. Like SMS it does not require an internet connection. SMS is limited to 160 characters and text only.'},
 
-//    T1 MISSING: Accessibility   
+// ── T1 MISSING: Accessibility ──
 {t:'t1',d:1,type:'mc',q:'Which device would be most suitable for a user with a visual impairment?',o:['Gesture Interface','Joystick','Braille Keyboard','Trackball'],c:2,hint:'This device converts text to a tactile format readable by touch.',explain:'A <strong>Braille Keyboard</strong> is designed for people with visual impairment. A <strong>Gesture Interface</strong> is more suitable for people with low mobility. Matching accessibility devices to the correct need is important for exam questions.'},
 
-//    T1 MISSING: Data calculations   
+// ── T1 MISSING: Data calculations ──
 {t:'t1',d:2,type:'mc',q:'How many bytes are in 1 KiB (kibibyte)?',o:['1000','1024','512','2048'],c:1,hint:'Binary prefixes use powers of 2. KiB uses 2 to the power of 10.',explain:'1 KiB (kibibyte) = <strong>1024 bytes</strong>. This uses the binary prefix system where 1 KiB = 2^10. This differs from the decimal prefix where 1 KB = 1000 bytes. Computers measure data using the binary method (KiB, MiB, GiB).'},
 {t:'t1',d:2,type:'fitb',q:'Complete: To calculate the number of bits in 1 GiB, the calculation is 1 x ___BLANK___ x 1024^3.',code:'Bits in 1 GiB = 1 x ___BLANK___ x 1024^3',a:'8',hint:'There are 8 bits in a byte, and 1024^3 bytes in a GiB.',explain:'To convert GiB to bits: multiply by <strong>8</strong> (bits per byte) and by 1024^3 (bytes per GiB). So 1 GiB = 1 x 8 x 1024^3 bits. For 128 GiB the calculation would be 128 x 8 x 1024^3.'},
 
-//    T1 MISSING: QR codes / card readers   
-{t:'t1',d:1,type:'mc',q:'Which type of card payment is considered least secure and why?',o:['Contactless  -  because it uses radio signals','Chip and PIN  -  because the PIN can be guessed','Magnetic strip  -  because no PIN is required to read it','NFC  -  because it works at long distances'],c:2,hint:'One type requires no PIN at all to access the data.',explain:'<strong>Magnetic strip</strong> cards are least secure because no PIN is required to read the data from them. Programmable chip cards only allow data to be read when the correct PIN is entered. NFC/RFID cards like Apple Pay use wireless communication and are linked to database records.'},
+// ── T1 MISSING: QR codes / card readers ──
+{t:'t1',d:1,type:'mc',q:'Which type of card payment is considered least secure and why?',o:['Contactless — because it uses radio signals','Chip and PIN — because the PIN can be guessed','Magnetic strip — because no PIN is required to read it','NFC — because it works at long distances'],c:2,hint:'One type requires no PIN at all to access the data.',explain:'<strong>Magnetic strip</strong> cards are least secure because no PIN is required to read the data from them. Programmable chip cards only allow data to be read when the correct PIN is entered. NFC/RFID cards like Apple Pay use wireless communication and are linked to database records.'},
 
-//    T1 MISSING: Processor   
+// ── T1 MISSING: Processor ──
 {t:'t1',d:2,type:'mc',q:'What is a clock cycle in the context of processors?',o:['The time it takes a computer to boot up','The number of times per second a processor can carry out one or more instructions, measured in Hertz','The speed at which data is written to secondary storage','The rate at which RAM is refreshed'],c:1,hint:'It is measured in Hertz (Hz) and determines processor speed.',explain:'A <strong>clock cycle per second</strong> is the number of times in one second that a processor can carry out one or more instructions. This is measured in Hertz (Hz). A faster clock speed means more instructions processed per second and better overall performance.'},
 
-//    T2 MISSING: Encryption types   
-{t:'t2',d:2,type:'mc',q:'What is the difference between symmetric and public key encryption?',o:['Symmetric uses two keys; public key uses one','Symmetric uses one shared key for both encryption and decryption; public key uses a public key to encrypt and a private key to decrypt','Public key encryption is weaker than symmetric','They are the same type of encryption'],c:1,hint:'One key or two  -  and who holds them?',explain:'<strong>Symmetric key encryption</strong> uses the same key to both encrypt and decrypt data  -  both sender and receiver must share this key. <strong>Public key encryption</strong> uses two different keys: a public key (shared openly) to encrypt, and a private key (held only by the recipient) to decrypt.'},
-{t:'t2',d:1,type:'mc',q:'What is a Caesar cipher?',o:['A method of encoding data using hexadecimal values','A simple encryption where all characters are shifted a fixed number of positions','An encryption using a public and private key pair','A wireless encryption standard for networks'],c:1,hint:'It is the simplest  -  and weakest  -  form of encryption.',explain:'A <strong>Caesar cipher</strong> shifts all data by a certain number of units. The number of units shifted is the key. It is however easy to crack by trying all possible shifts, making it the least secure form of encryption covered in the course.'},
+// ── T2 MISSING: Encryption types ──
+{t:'t2',d:2,type:'mc',q:'What is the difference between symmetric and public key encryption?',o:['Symmetric uses two keys; public key uses one','Symmetric uses one shared key for both encryption and decryption; public key uses a public key to encrypt and a private key to decrypt','Public key encryption is weaker than symmetric','They are the same type of encryption'],c:1,hint:'One key or two — and who holds them?',explain:'<strong>Symmetric key encryption</strong> uses the same key to both encrypt and decrypt data — both sender and receiver must share this key. <strong>Public key encryption</strong> uses two different keys: a public key (shared openly) to encrypt, and a private key (held only by the recipient) to decrypt.'},
+{t:'t2',d:1,type:'mc',q:'What is a Caesar cipher?',o:['A method of encoding data using hexadecimal values','A simple encryption where all characters are shifted a fixed number of positions','An encryption using a public and private key pair','A wireless encryption standard for networks'],c:1,hint:'It is the simplest — and weakest — form of encryption.',explain:'A <strong>Caesar cipher</strong> shifts all data by a certain number of units. The number of units shifted is the key. It is however easy to crack by trying all possible shifts, making it the least secure form of encryption covered in the course.'},
 
-//    T2 MISSING: Network components   
+// ── T2 MISSING: Network components ──
 {t:'t2',d:1,type:'mc',q:'What is the purpose of a network switch?',o:['To amplify wireless signals across larger distances','To connect devices using multiple wired ports','To connect a LAN to a WAN','To assign IP addresses to connected devices'],c:1,hint:'It has many ports and connects devices using cables.',explain:'A <strong>switch</strong> has many ports that can be used to connect devices with cables within a network. It differs from a router (which directs traffic between networks) and a WAP (which provides wireless access).'},
 {t:'t2',d:1,type:'mc',q:'What is a Wireless Access Point (WAP)?',o:['A device that connects wireless devices to a wired network','A type of router that only supports wireless connections','A server that manages user accounts on a network','A booster that extends cable range'],c:0,hint:'It bridges wireless devices onto a wired network.',explain:'A <strong>Wireless Access Point (WAP)</strong> connects devices with Wi-Fi connectivity to a wired network wirelessly. Nowadays WAPs are often built into routers and can come with boosters to extend coverage.'},
 {t:'t2',d:1,type:'typein',q:'What is the name for a device that amplifies a network signal so it can cover larger distances?',a:'booster',hint:'It strengthens a weak signal.',explain:'A <strong>booster</strong> amplifies a network signal so it can cover larger distances. They are commonly used in large buildings or homes where the router signal does not reach all areas effectively.'},
 
-//    T2 MISSING: Server types   
+// ── T2 MISSING: Server types ──
 {t:'t2',d:2,type:'mc',q:'Which type of server verifies usernames and passwords to grant access to a network?',o:['File Server','Web Server','Authentication Server','Print Server'],c:2,hint:'It checks your credentials when you log in.',explain:'An <strong>Authentication Server</strong> verifies usernames and passwords to grant or deny access to a network. Other server types include: File Servers (store and share files), Print Servers (manage print queues), Web Servers (host websites) and Application Servers (host software).'},
 
-//    T2 MISSING: Peer-to-peer vs client-server   
+// ── T2 MISSING: Peer-to-peer vs client-server ──
 {t:'t2',d:1,type:'mc',q:'What is the key difference between a peer-to-peer and a client-server network?',o:['Peer-to-peer uses wireless only; client-server uses wired only','In peer-to-peer devices share resources directly without a server; in client-server all devices connect to a central server','Peer-to-peer networks are always larger than client-server networks','Client-server networks cannot share files'],c:1,hint:'One has a central server; the other does not.',explain:'In a <strong>peer-to-peer network</strong> devices connect directly to each other and share resources without a server. In a <strong>client-server network</strong> all devices (clients) connect to a central server which manages resources, access rights and backups.'},
 
-//    T3 MISSING: More malware types   
+// ── T3 MISSING: More malware types ──
 {t:'t3',d:1,type:'mc',q:'What does adware do?',o:['Encrypts your files and demands a ransom','Monitors all keystrokes on a device','Bombards the user with unwanted adverts to get them to spend money','Disguises itself as legitimate software while stealing data'],c:2,hint:'It floods you with unwanted advertisements.',explain:'<strong>Adware</strong> peppers the user with unwanted adverts to attempt to get them to part with their money. It differs from ransomware (encrypts files), spyware (monitors activity) and trojans (disguise themselves as legitimate software while stealing data or crashing systems).'},
-{t:'t3',d:1,type:'mc',q:'What is a trojan in the context of malware?',o:['A virus that spreads through email attachments','An application that appears legitimate but is secretly stealing data, spying or crashing the computer','Software that locks the screen until payment is made','A program that displays fake security warnings'],c:1,hint:'It disguises itself as something harmless.',explain:'A <strong>trojan</strong> is an application that appears legitimate but is actually stealing personal data, spying on the user, or crashing the computer. It is named after the Trojan Horse  -  it looks harmless but contains something harmful inside.'},
+{t:'t3',d:1,type:'mc',q:'What is a trojan in the context of malware?',o:['A virus that spreads through email attachments','An application that appears legitimate but is secretly stealing data, spying or crashing the computer','Software that locks the screen until payment is made','A program that displays fake security warnings'],c:1,hint:'It disguises itself as something harmless.',explain:'A <strong>trojan</strong> is an application that appears legitimate but is actually stealing personal data, spying on the user, or crashing the computer. It is named after the Trojan Horse — it looks harmless but contains something harmful inside.'},
 {t:'t3',d:1,type:'mc',q:'What is scareware?',o:['Malware that encrypts files','Software that takes the user to a page to purchase a fake security program','A virus spread through social media','Malware that records keystrokes'],c:1,hint:'It tries to frighten you into buying something fake.',explain:'<strong>Scareware</strong> takes the user to a page to purchase a fake program, usually by displaying alarming (but false) warnings that the device is infected. The goal is to trick the user into paying for a useless or harmful fake product.'},
 
-//    T3 MISSING: Anti-malware   
+// ── T3 MISSING: Anti-malware ──
 {t:'t3',d:1,type:'mc',q:'How does anti-virus software protect a device?',o:['It encrypts all incoming files before they are opened','It constantly checks files being downloaded against known virus definitions and quarantines matches','It blocks all incoming network connections','It deletes any file larger than a set size'],c:1,hint:'It compares files against a database of known threats.',explain:'<strong>Anti-virus software</strong> constantly checks files being downloaded for signs of virus definitions. If a match is found the file is quarantined so it cannot run. The software must be updated regularly as new viruses are constantly being created.'},
 
-//    T3 MISSING: Online payments   
-{t:'t3',d:1,type:'mc',q:'When entering bank card details for an online payment, which of these is NOT typically required?',o:['Card Number','Card Security Code (CSC)','Expiry Date','The bank branch address'],c:3,hint:'Online payments need card details  -  not physical bank location details.',explain:'Online payments typically require: <strong>Card Number, Card Security Code (CSC), Expiry Date</strong> and Cardholder Name. The bank branch address is not needed for online transactions. Examples of third-party payment processors include PayPal and BenefitPay.'},
+// ── T3 MISSING: Online payments ──
+{t:'t3',d:1,type:'mc',q:'When entering bank card details for an online payment, which of these is NOT typically required?',o:['Card Number','Card Security Code (CSC)','Expiry Date','The bank branch address'],c:3,hint:'Online payments need card details — not physical bank location details.',explain:'Online payments typically require: <strong>Card Number, Card Security Code (CSC), Expiry Date</strong> and Cardholder Name. The bank branch address is not needed for online transactions. Examples of third-party payment processors include PayPal and BenefitPay.'},
 
-//    T3 MISSING: Staying safe online   
+// ── T3 MISSING: Staying safe online ──
 {t:'t3',d:1,type:'mc',q:'Which of these should you keep private and NOT share online?',o:['Your favourite music','Your school name, location and phone number','Your opinion on a film','The name of your pet'],c:1,hint:'Personal information that could identify or locate you.',explain:'You should keep private online: <strong>location, school, phone number, real name, photos, mailing address and any password</strong>. This information could be used by strangers to identify, locate or impersonate you. You should adjust your privacy settings to prevent strangers viewing your profile.'},
 
-//    T3 MISSING: Online communities  -  types   
+// ── T3 MISSING: Online communities — types ──
 {t:'t3',d:1,type:'mc',q:'What is an online community?',o:['A website that sells products to groups of people','A group of people with a shared common interest who communicate online','A type of private intranet used by businesses','A social media platform only accessible by invitation'],c:1,hint:'The key elements are shared interest and online communication.',explain:'An <strong>online community</strong> is a group of people with a shared common interest who communicate online. Each type of online community has a target audience, a function (what it does for users) and features (aspects that allow it to carry out its function).'},
 {t:'t3',d:1,type:'mc',q:'What is the function of a Virtual Learning Environment (VLE)?',o:['To allow users to play multiplayer games together','To allow teachers and students to use learning and assessment materials online','To enable colleagues to collaborate on work documents','To allow members to share web documents and URLs'],c:1,hint:'Your school\'s online learning platform is an example.',explain:'A <strong>Virtual Learning Environment (VLE)</strong> allows teachers and students to use learning and assessment materials. Features include log-in systems, gradebooks, feed/timeline, areas to submit assignments, multiple choice quizzes with automatic grading, and the ability to share audio, video and web links.'},
 {t:'t3',d:1,type:'mc',q:'What is the difference between a wiki and a forum as types of online community?',o:['Wikis are for gaming; forums are for learning','A wiki is a website that multiple users can add or edit content on; a forum is where members have structured discussions','A wiki requires a subscription; a forum is always free','Forums allow file sharing; wikis do not'],c:1,hint:'One is about collaborative content creation; the other is about discussion.',explain:'A <strong>wiki</strong> is a website prepared by several users who can all add or edit content (e.g. Wikipedia). A <strong>forum</strong> is where members come together for structured discussions organised into threads. Forums have moderators and administrators to manage behaviour.'},
@@ -1463,45 +1413,45 @@ var Q=[
 {t:'t3',d:1,type:'typein',q:'What is the name for a series of messages on a forum that all concern the same subject?',a:'thread',hint:'Replies to a post form one of these.',explain:'A <strong>thread</strong> is a series of messages on a forum concerning the same subject. Threads allow discussions to be organised by topic. Moderators can lock or delete threads that break forum rules.'},
 {t:'t3',d:1,type:'fitb',q:'Complete: Social bookmarking uses ___BLANK___ to categorise web documents and URLs so others can find content.',code:'Social bookmarking uses ___BLANK___ to categorise web documents and URLs.',a:'tags',hint:'You label content with keywords so others can search for it.',explain:'<strong>Social bookmarking</strong> uses <strong>tags</strong> to categorise web documents and URLs so that other people can find content by using those tags in searches. It allows users to share useful web pages with a community.'},
 {t:'t3',d:2,type:'mc',q:'What is geotagging and why is it a privacy risk?',o:['Adding likes to photos on social media','Automatically embedding location data into photos which can reveal where a user lives or goes','Tagging friends in photos without their permission','Using GPS to navigate to a location'],c:1,hint:'Your photos can secretly contain your location coordinates.',explain:'<strong>Geotagging</strong> is when location data is automatically embedded into photographs. This is a significant privacy risk because it can reveal exactly where a user lives, works or spends time. Users should deactivate geotagging on their devices and always check their privacy settings.'},
-{t:'t3',d:2,type:'mc',q:'What is the risk of anonymity in online communities?',o:['Anonymous users produce better quality content','Anonymity can protect users but also allows people to pretend to be someone they are not','Anonymity makes networks faster','Anonymous users cannot access premium content'],c:1,hint:'It cuts both ways  -  protection and risk.',explain:'<strong>Anonymity</strong> in online communities can protect users (e.g. victims of abuse speaking freely) but also opens doors for people to <strong>misrepresent themselves</strong>  -  pretending to be someone they are not. Any signs of misrepresentation should be reported immediately.'},
+{t:'t3',d:2,type:'mc',q:'What is the risk of anonymity in online communities?',o:['Anonymous users produce better quality content','Anonymity can protect users but also allows people to pretend to be someone they are not','Anonymity makes networks faster','Anonymous users cannot access premium content'],c:1,hint:'It cuts both ways — protection and risk.',explain:'<strong>Anonymity</strong> in online communities can protect users (e.g. victims of abuse speaking freely) but also opens doors for people to <strong>misrepresent themselves</strong> — pretending to be someone they are not. Any signs of misrepresentation should be reported immediately.'},
 {t:'t3',d:2,type:'order',q:'Order these features of a forum from most to least powerful role:',
-  lines:[{text:'Administrator  -  all moderator powers plus can promote/demote moderators',indent:0},{text:'Moderator  -  can allow or block posts and members',indent:0},{text:'Member  -  can post, reply and rate content',indent:0}],
+  lines:[{text:'Administrator — all moderator powers plus can promote/demote moderators',indent:0},{text:'Moderator — can allow or block posts and members',indent:0},{text:'Member — can post, reply and rate content',indent:0}],
   correctOrder:[0,1,2],
   hint:'Administrator is highest, then moderator, then regular member.',
-  explain:'<strong>Administrators</strong> have the most power  -  they can do everything a moderator can plus promote members to moderators or demote moderators. <strong>Moderators</strong> can allow or block posts and members. <strong>Members</strong> are regular users who can post and interact.'},
+  explain:'<strong>Administrators</strong> have the most power — they can do everything a moderator can plus promote members to moderators or demote moderators. <strong>Moderators</strong> can allow or block posts and members. <strong>Members</strong> are regular users who can post and interact.'},
 
-//    T3 MISSING: Implications  -  data protection   
+// ── T3 MISSING: Implications — data protection ──
 {t:'t3',d:2,type:'mc',q:'Under data protection principles, for how long may organisations keep personal data?',o:['As long as they wish if it is stored securely','Not longer than necessary for its stated purpose','For exactly 7 years in all cases','Until the individual requests deletion only'],c:1,hint:'One of the key principles of data protection is about retention.',explain:'Under data protection principles organisations must not keep personal data <strong>for longer than necessary</strong> for its specifically stated purpose. Other principles include: data must be used fairly and lawfully, for limited stated purposes, in an adequate and relevant manner, and handled according to people\'s data protection rights.'},
 {t:'t3',d:2,type:'mc',q:'What right do individuals have regarding inaccurate personal data held about them?',o:['They must accept whatever data is stored','They have the right to have inaccurate data rectified and to claim compensation','They can only request data deletion after 2 years','They must contact the government to change stored data'],c:1,hint:'Data protection gives individuals rights over their own data.',explain:'Individuals whose data is stored have the right to have <strong>inaccurate data rectified</strong> and to claim compensation. Other rights include: accessing a copy of their data, objecting to processing that causes damage or distress, preventing processing for direct marketing, and objecting to automated decisions.'},
 
-//    T3 MISSING: Implications  -  health & safety   
+// ── T3 MISSING: Implications — health & safety ──
 {t:'t3',d:1,type:'mc',q:'What health issue can be caused by using devices incorrectly with poor posture, particularly affecting the wrists?',o:['Eye strain','Digital Divide','Repetitive Strain Injury (RSI)','Electric shock'],c:2,hint:'Incorrect use of keyboards and mice over time causes this.',explain:'<strong>Repetitive Strain Injury (RSI)</strong> / wrist pain is caused by using devices incorrectly with poor posture over time. It can be prevented by using ergonomic devices and support. Ergonomic means designed for efficiency and comfort.'},
-{t:'t3',d:1,type:'mc',q:'What causes eye strain when using digital devices, and how can it be reduced?',o:['Bright room lighting  -  reduce by dimming lights','Looking at screens for long periods because eyes are sensitive to short wavelength blue light  -  reduce with regular breaks and blue light filters','Using wireless devices  -  reduce by switching to wired','High resolution screens  -  reduce by lowering screen resolution'],c:1,hint:'It relates to the type of light screens emit.',explain:'<strong>Eye strain</strong> is caused by looking at screens for long periods. Human eyes are sensitive to short wavelength blue light emitted by screens, which can also affect sleep. It can be reduced with regular breaks, not sitting too close, using a large screen, and applying blue light filters.'},
-{t:'t3',d:2,type:'mc',q:'What is the recommended solution for trailing wires that create a trip hazard in a workspace?',o:['Remove all wired devices and switch to wireless','Good cable management  -  secure and tidy cables away from walkways','Cover cables with a mat','Reduce the number of devices used'],c:1,hint:'The issue is exposed cables in walkways.',explain:'<strong>Trip hazards</strong> from trailing wires should be addressed through good cable management  -  securing and tidying cables away from areas where people walk. This is a key health and safety consideration in any workspace with ICT equipment.'},
+{t:'t3',d:1,type:'mc',q:'What causes eye strain when using digital devices, and how can it be reduced?',o:['Bright room lighting — reduce by dimming lights','Looking at screens for long periods because eyes are sensitive to short wavelength blue light — reduce with regular breaks and blue light filters','Using wireless devices — reduce by switching to wired','High resolution screens — reduce by lowering screen resolution'],c:1,hint:'It relates to the type of light screens emit.',explain:'<strong>Eye strain</strong> is caused by looking at screens for long periods. Human eyes are sensitive to short wavelength blue light emitted by screens, which can also affect sleep. It can be reduced with regular breaks, not sitting too close, using a large screen, and applying blue light filters.'},
+{t:'t3',d:2,type:'mc',q:'What is the recommended solution for trailing wires that create a trip hazard in a workspace?',o:['Remove all wired devices and switch to wireless','Good cable management — secure and tidy cables away from walkways','Cover cables with a mat','Reduce the number of devices used'],c:1,hint:'The issue is exposed cables in walkways.',explain:'<strong>Trip hazards</strong> from trailing wires should be addressed through good cable management — securing and tidying cables away from areas where people walk. This is a key health and safety consideration in any workspace with ICT equipment.'},
 
-//    T3 MISSING: Implications  -  sustainability   
-{t:'t3',d:2,type:'mc',q:'Why do data centre cooling systems raise sustainability concerns?',o:['They make too much noise','They consume large amounts of power from non-renewable energy sources','They use too much water','They emit radio waves that disrupt local Wi-Fi'],c:1,hint:'The power used comes from somewhere  -  and that is the problem.',explain:'Data centre <strong>cooling systems</strong> use a lot of power from non-renewable energy sources. One solution is to build data centres in cold environments (like Iceland) to reduce the energy needed for cooling. This is part of the wider sustainability problem caused by ICT.'},
+// ── T3 MISSING: Implications — sustainability ──
+{t:'t3',d:2,type:'mc',q:'Why do data centre cooling systems raise sustainability concerns?',o:['They make too much noise','They consume large amounts of power from non-renewable energy sources','They use too much water','They emit radio waves that disrupt local Wi-Fi'],c:1,hint:'The power used comes from somewhere — and that is the problem.',explain:'Data centre <strong>cooling systems</strong> use a lot of power from non-renewable energy sources. One solution is to build data centres in cold environments (like Iceland) to reduce the energy needed for cooling. This is part of the wider sustainability problem caused by ICT.'},
 {t:'t3',d:2,type:'mc',q:'What environmental risk is caused by disposing of old ICT equipment irresponsibly?',o:['It generates too much heat','Poisonous substances like bromine, mercury and chlorine can leak out causing health risks','Old devices emit harmful radio waves','Discarded devices take up too much landfill space only'],c:1,hint:'Think about what is inside the hardware itself.',explain:'ICT devices contain <strong>poisonous substances</strong> including bromine, mercury and chlorine. When thrown away irresponsibly these substances leak and cause health risks. Solutions include education, recycling programmes, legislation and developing harmless alternatives.'},
 
-//    T3 MISSING: Chapter 10  -  online information   
+// ── T3 MISSING: Chapter 10 — online information ──
 {t:'t3',d:1,type:'mc',q:'What is the difference between a primary and secondary source?',o:['Primary sources are more recent; secondary sources are older','A primary source is data you own (e.g. photos you took); a secondary source is data owned by someone else that you are using','Primary sources are always more reliable than secondary sources','Secondary sources are always online; primary sources are always offline'],c:1,hint:'Did you create the data yourself, or are you using someone else\'s?',explain:'A <strong>primary source</strong> is data you own yourself, such as photos you have taken or articles you have written. A <strong>secondary source</strong> is data owned by someone else that you are using, such as a radio programme, TV show or a book.'},
 {t:'t3',d:2,type:'mc',q:'When evaluating online information, which of the following best describes "bias"?',o:['Information that is too recent to be useful','Information that only looks at one side of a topic and does not consider opposing arguments','Information that contains too many statistics','Information written by an anonymous author'],c:1,hint:'Biased content favours one perspective and ignores the other.',explain:'<strong>Bias</strong> in online information means the content only looks at one side of a topic and is prejudiced. To check for bias: examine the statistics used, look for opposing arguments, check reliability against other sources and look for missing information. Good information should be balanced.'},
 {t:'t3',d:1,type:'fitb',q:'Complete: In search engine syntax, the ___BLANK___ operator is used to exclude a word from search results.',code:'In search syntax, the ___BLANK___ operator excludes a word from results.',a:'-',hint:'It is a minus sign placed before the word you want to exclude.',explain:'The <strong>- (minus/NOT)</strong> operator excludes a word from search results. The + (AND) operator adds a required term. Placing a phrase in quotation marks ("") matches the exact phrase. These search syntax tools help narrow down results to find more relevant information.'},
 
-//    T3 MISSING: Collaborative & flexible working   
+// ── T3 MISSING: Collaborative & flexible working ──
 {t:'t3',d:2,type:'mc',q:'What is a disadvantage of flexible working for employees?',o:['They cannot access up-to-date information','There is less face-to-face interaction and work/time may not be managed effectively','They must always wear a uniform','They cannot take breaks when needed'],c:1,hint:'Think about what is lost when you work away from an office.',explain:'Disadvantages of <strong>flexible working</strong> for employees include: less face-to-face interaction (reducing understanding of colleagues), difficulty managing work and time effectively, risk of overworking and exhaustion, and required resources may not be accessible at home.'},
 {t:'t3',d:2,type:'mc',q:'What is a benefit of collaborative working where more than one person works on the same task?',o:['Each employee can focus on a narrow specialised skill','Expertise is shared and employees can check each other\'s work','Tasks are completed faster because fewer people are involved','Employees develop a deeper understanding of their specific area only'],c:1,hint:'When multiple people work together on one task, knowledge flows between them.',explain:'When more than one person works on the same task, a benefit is that <strong>expertise is shared</strong> and employees can check each other\'s work. A drawback is that it can be difficult for people to agree and hard to coordinate a large team.'},
 
-//    T4 MISSING: Types of online services   
+// ── T4 MISSING: Types of online services ──
 {t:'t4',d:1,type:'mc',q:'What information is typically stored in a product catalogue on a shopping website?',o:['Only the price and product name','Image, description, price, ratings, popularity, product code and stock level','The customer\'s delivery address and payment details','Only items currently in stock'],c:1,hint:'A product catalogue helps customers make purchasing decisions.',explain:'A <strong>product catalogue</strong> on a shopping site can store: image of the product, description, price, ratings, popularity, product code and number of items in stock. This helps customers make informed decisions without visiting a physical shop.'},
-{t:'t4',d:1,type:'mc',q:'What is a benefit of online booking systems compared to buying tickets in person?',o:['Tickets are always cheaper online','You can avoid travelling to a station, avoid queues, buy tickets in advance and be notified about delays','Online tickets cannot be lost or stolen','Online booking is available only during business hours'],c:1,hint:'Think about convenience  -  time, travel and queuing.',explain:'Online booking systems allow users to <strong>avoid travelling to stations, avoid queues, buy tickets in advance</strong> and be notified about delays. E-tickets can be sent by email. Tickets can be bought for transport, leisure and entertainment.'},
+{t:'t4',d:1,type:'mc',q:'What is a benefit of online booking systems compared to buying tickets in person?',o:['Tickets are always cheaper online','You can avoid travelling to a station, avoid queues, buy tickets in advance and be notified about delays','Online tickets cannot be lost or stolen','Online booking is available only during business hours'],c:1,hint:'Think about convenience — time, travel and queuing.',explain:'Online booking systems allow users to <strong>avoid travelling to stations, avoid queues, buy tickets in advance</strong> and be notified about delays. E-tickets can be sent by email. Tickets can be bought for transport, leisure and entertainment.'},
 {t:'t4',d:1,type:'mc',q:'What feature of auction sites helps buyers assess the reliability of a seller?',o:['The number of items listed','Seller ratings showing reliability and sending times','The price of items','The date the seller joined the platform'],c:1,hint:'Trust is built through feedback from previous transactions.',explain:'<strong>Auction sites</strong> display ratings for both buyers (reliability and payment speed) and sellers (reliability and sending times). Alerts and notifications are also available. These ratings help users make informed decisions about who to trade with.'},
 {t:'t4',d:2,type:'mc',q:'What is a negative impact of online services on individuals?',o:['Access to a wider range of products','People become more isolated as they detach from real-world communities and face-to-face interaction','Information becomes harder to find','Shopping becomes more expensive'],c:1,hint:'Think about what happens to social connections when everything is done online.',explain:'Negative impacts of online services on individuals include: people becoming <strong>more isolated</strong> as they detach from real-world communities, less patience due to immediate information availability, less need to memorise facts, and becoming accustomed to skim-reading rather than deep understanding.'},
 
-//    EXTRA TYPE-IN & FILL-IN-BLANK  -  key exam recall terms   
+// ── EXTRA TYPE-IN & FILL-IN-BLANK — key exam recall terms ──
 
 // TOPIC 1
-{t:'t1',d:1,type:'typein',q:'What is the term for when the designs of devices change so that they become similar to one another  -  for example, laptops that flip into tablets?',a:'convergence',hint:'Phones absorbing the functions of cameras and game consoles is another example.',explain:'<strong>Convergence</strong> is when the designs of devices change so that they become similar to another. A phone that acts as a camera, game console and music player is a result of convergence.'},
+{t:'t1',d:1,type:'typein',q:'What is the term for when the designs of devices change so that they become similar to one another — for example, laptops that flip into tablets?',a:'convergence',hint:'Phones absorbing the functions of cameras and game consoles is another example.',explain:'<strong>Convergence</strong> is when the designs of devices change so that they become similar to another. A phone that acts as a camera, game console and music player is a result of convergence.'},
 
 {t:'t1',d:1,type:'typein',q:'What is the name for computing hardware that is fixed in position and carries out a specialist task, such as a calculator?',a:'embedded computing',hint:'It is the opposite of physical computing.',explain:'<strong>Embedded computing</strong> is computing hardware fixed in position that carries out a specialist task. Calculators are an example. It is the opposite of physical computing, which involves interactive systems that respond to the environment.'},
 
@@ -1511,7 +1461,7 @@ var Q=[
 
 {t:'t1',d:1,type:'typein',q:'What is the name for the part of a hard disk that moves across the spinning platters to read and write data?',a:'read/write head',hint:'It performs two different operations depending on whether data is being stored or retrieved.',explain:'The <strong>read/write head</strong> moves across the spinning platters of a hard disk. When reading, it changes magnetic field to electric current. When writing, it changes electric current to magnetic field.'},
 
-{t:'t1',d:1,type:'fitb',q:'Complete: ROM is ___BLANK___, meaning data is not lost when power is switched off.',code:'ROM is ___BLANK___, meaning data is kept when power is lost.',a:'non-volatile',hint:'The opposite of RAM, which loses data when power is lost.',explain:'ROM is <strong>non-volatile</strong>  -  data is not lost when power is lost. RAM is volatile. This is why ROM is used to store the boot data that a computer needs to start up, since it must persist even when the computer is off.'},
+{t:'t1',d:1,type:'fitb',q:'Complete: ROM is ___BLANK___, meaning data is not lost when power is switched off.',code:'ROM is ___BLANK___, meaning data is kept when power is lost.',a:'non-volatile',hint:'The opposite of RAM, which loses data when power is lost.',explain:'ROM is <strong>non-volatile</strong> — data is not lost when power is lost. RAM is volatile. This is why ROM is used to store the boot data that a computer needs to start up, since it must persist even when the computer is off.'},
 
 {t:'t1',d:1,type:'typein',q:'What is the name for software that allows users to maintain the operating system and carry out configuration tasks such as backup, defragmentation and compression?',a:'utility software',hint:'It is a type of system software.',explain:'<strong>Utility software</strong> is a type of system software that allows the user to maintain the operating system and carry out configuration tasks. Examples include backup tools, defragmentation, compression software and formatting tools.'},
 
@@ -1520,11 +1470,11 @@ var Q=[
 // TOPIC 2
 {t:'t2',d:1,type:'typein',q:'What is the term for an area of temporary storage used to hold data while it is being streamed, so that playback is not interrupted?',a:'buffer',hint:'When this empties, the video pauses.',explain:'A <strong>buffer</strong> is an area of storage used to temporarily store data when streaming. As you watch, the buffer fills with incoming data. If the buffer empties before more data arrives, the video pauses until it refills.'},
 
-{t:'t2',d:1,type:'typein',q:'What is the name for the time it takes data to travel between two devices on a network?',a:'latency',hint:'High values of this cause lag in online gaming.',explain:'<strong>Latency</strong> is the time it takes data to travel between two devices. Low latency is desirable  -  it prevents lag in live events, video calls and online gaming.'},
+{t:'t2',d:1,type:'typein',q:'What is the name for the time it takes data to travel between two devices on a network?',a:'latency',hint:'High values of this cause lag in online gaming.',explain:'<strong>Latency</strong> is the time it takes data to travel between two devices. Low latency is desirable — it prevents lag in live events, video calls and online gaming.'},
 
 {t:'t2',d:1,type:'fitb',q:'Complete: A ___BLANK___ connects LANs to WANs and is where firewalls are typically found.',code:'A ___BLANK___ connects LANs to WANs and is where firewalls are found.',a:'gateway',hint:'It is the exit point from a local network to the wider internet.',explain:'A <strong>gateway</strong> connects LANs to WANs. It acts as the exit point from a local network to the wider internet. Firewalls are commonly placed at gateways to control traffic entering and leaving the network.'},
 
-{t:'t2',d:1,type:'typein',q:'What does DHCP stand for  -  the protocol that automatically assigns IP addresses to devices on a network?',a:'Dynamic Host Configuration Protocol',hint:'It is responsible for giving devices their IP address when they connect.',explain:'<strong>DHCP (Dynamic Host Configuration Protocol)</strong> automatically assigns IP addresses to devices when they connect to a network. This is why IP addresses are not fixed  -  they are assigned dynamically by DHCP each time a device connects.'},
+{t:'t2',d:1,type:'typein',q:'What does DHCP stand for — the protocol that automatically assigns IP addresses to devices on a network?',a:'Dynamic Host Configuration Protocol',hint:'It is responsible for giving devices their IP address when they connect.',explain:'<strong>DHCP (Dynamic Host Configuration Protocol)</strong> automatically assigns IP addresses to devices when they connect to a network. This is why IP addresses are not fixed — they are assigned dynamically by DHCP each time a device connects.'},
 
 {t:'t2',d:1,type:'fitb',q:'Complete: In WPA encryption, every ___BLANK___ sent out of the network is encrypted with a unique key, making it much harder to crack than WEP.',code:'In WPA, every ___BLANK___ is encrypted with a unique key.',a:'data packet',hint:'WPA encrypts each individual chunk of data separately.',explain:'<strong>WPA (Wi-Fi Protected Access)</strong> is more secure than WEP because every device has a unique key AND every <strong>data packet</strong> sent out is encrypted with a unique key. WEP uses the same key for everything, making it easy for eavesdroppers to crack.'},
 
@@ -1556,7 +1506,7 @@ var Q=[
 
 {t:'t4',d:1,type:'fitb',q:'Complete: ___BLANK___ cookies are only stored until a webpage is closed, while persistent cookies record internet use over time.',code:'___BLANK___ cookies are deleted when the webpage is closed.',a:'session',hint:'They exist only during a single browsing session.',explain:'<strong>Session cookies</strong> are only stored until a webpage is closed. <strong>Persistent cookies</strong> last longer, recording internet use over time and keeping users logged in. Third party cookies are placed by ad servers for targeted marketing.'},
 
-{t:'t4',d:1,type:'typein',q:'What is the term for cloud storage capacity that can be increased on demand as a user\'s storage needs grow?',a:'scalable',hint:'It means the storage can grow with you.',explain:'Online cloud storage is <strong>scalable</strong>  -  its capacity can be expanded to meet growing needs. This is a key advantage over local storage which has a fixed physical capacity. Expanding cloud storage often requires additional payment.'},
+{t:'t4',d:1,type:'typein',q:'What is the term for cloud storage capacity that can be increased on demand as a user\'s storage needs grow?',a:'scalable',hint:'It means the storage can grow with you.',explain:'Online cloud storage is <strong>scalable</strong> — its capacity can be expanded to meet growing needs. This is a key advantage over local storage which has a fixed physical capacity. Expanding cloud storage often requires additional payment.'},
 
 {t:'t4',d:2,type:'fitb',q:'Complete: A hosted application runs on an online ___BLANK___ and requires an internet connection, unlike locally installed software.',code:'A hosted application runs on an online ___BLANK___ and requires an internet connection.',a:'server',hint:'The application itself does not sit on your device.',explain:'A <strong>hosted application</strong> runs on an online <strong>server</strong> and requires an internet connection. Its performance is affected by bandwidth and latency. Since it runs on a server, users can share files and collaborate. Examples include Google Docs and web-based Microsoft Office.'}
 ];
@@ -1567,14 +1517,14 @@ var TC={t1:'var(--blue-light)',t2:'var(--teal-light)',t3:'var(--purple-light)',t
 var pName='',sT={t1:true,t2:true,t3:true,t4:true},sM='timed';
 var score=0,lives=3,streak=0,bStreak=0,corr=0,qI=0;
 var answered=false,hintUsed=false,tInt=null,tLeft=30;
-var hs=0;try{hs=Number(localStorage.getItem('ictqHi'))||0;}catch(e){}
-var topicHS={};try{topicHS=JSON.parse(localStorage.getItem('ictqTopicHS')||'{}');}catch(e){}
+var hs=Number(localStorage.getItem('ictqHi'))||0;
+var topicHS=JSON.parse(localStorage.getItem('ictqTopicHS')||'{}');
 var shuf=[],tStats={},aLog=[],oPlaced=[];
 var TOT=20,TL=30;
 
-//    NAVIGATION   
+// ── NAVIGATION ──
 function ss(id){document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});if(id){var el=document.getElementById(id);if(el)el.classList.add('active');}}
-function hideAll(){ss('');document.getElementById('gs').style.display='none';document.getElementById('landingScreen').style.display='none';document.getElementById('notesScreen').style.display='none';document.getElementById('flashScreen').style.display='none';document.getElementById('rs').style.display='none';document.getElementById('revs').style.display='none';}
+function hideAll(){ss('');document.getElementById('gs').style.display='none';document.getElementById('landingScreen').style.display='none';document.getElementById('notesScreen').style.display='none';document.getElementById('rs').style.display='none';document.getElementById('revs').style.display='none';}
 
 function goName(){hideAll();ss('nameScreen');}
 function goLanding(){
@@ -1608,15 +1558,15 @@ function updateLanding(){
     if(d&&d.played){
       var pct=Math.round((d.corr/d.tot)*100);
       if(bar)bar.style.width=pct+'%';
-      if(stat)stat.textContent='Last score: '+pct+'% ('+d.corr+'/'+d.tot+')  -  tap to practise';
+      if(stat)stat.textContent='Last score: '+pct+'% ('+d.corr+'/'+d.tot+') — tap to practise';
     } else {
       if(bar)bar.style.width='0%';
-      if(stat)stat.textContent=counts[t]+' questions  -  tap to practise';
+      if(stat)stat.textContent=counts[t]+' questions — tap to practise';
     }
   });
 }
 
-//    NOTES   
+// ── NOTES ──
 function showNotesTopic(n,btn){
   document.querySelectorAll('.topic-notes').forEach(function(el){el.classList.remove('active');});
   document.querySelectorAll('.ntab').forEach(function(b){b.classList.remove('active');});
@@ -1632,7 +1582,7 @@ function toggleChapter(head){
   if(arrow)arrow.classList.toggle('open',!isOpen);
 }
 
-//    SETUP   
+// ── SETUP ──
 (function(){['t1','t2','t3','t4'].forEach(function(t){var n=Q.filter(function(q){return q.t===t;}).length;var el=document.getElementById('cnt-'+t);if(el)el.textContent=n+' questions';});})();
 
 var allS=true;
@@ -1640,25 +1590,24 @@ function toggleT(card){var t=card.dataset.t;sT[t]=!sT[t];card.classList.toggle('
 function toggleAll(){allS=!allS;Object.keys(sT).forEach(function(t){sT[t]=allS;});document.querySelectorAll('.t-card').forEach(function(c){c.classList.toggle('sel',allS);});document.getElementById('saBtn').textContent=allS?'Deselect all':'Select all';document.getElementById('startBtn').disabled=!allS;}
 function pickM(btn){document.querySelectorAll('#mGrid .p-card').forEach(function(b){b.className='p-card';});sM=btn.dataset.m;btn.classList.add('sm');}
 
-//    NAME SCREEN  -  pre-fill saved name   
-var savedName='';
-try{savedName=localStorage.getItem('ictqName')||'';}catch(e){}
+// ── NAME SCREEN — pre-fill saved name ──
+var savedName=localStorage.getItem('ictqName')||'';
 if(savedName){document.getElementById('nameInput').value=savedName;}
 document.getElementById('nameBtn').addEventListener('click',function(){
   pName=document.getElementById('nameInput').value.trim()||'Student';
-  try{localStorage.setItem('ictqName',pName);}catch(e){}
+  localStorage.setItem('ictqName',pName);
   goLanding();
 });
 document.getElementById('nameInput').addEventListener('keydown',function(e){
   if(e.key==='Enter'){
     pName=document.getElementById('nameInput').value.trim()||'Student';
-    try{localStorage.setItem('ictqName',pName);}catch(e){}
+    localStorage.setItem('ictqName',pName);
     goLanding();
   }
 });
 document.getElementById('nameInput').focus();
 
-//    GAME   
+// ── GAME ──
 function sh(arr){var a=arr.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var tmp=a[i];a[i]=a[j];a[j]=tmp;}return a;}
 
 function startGame(){
@@ -1674,8 +1623,8 @@ function startGame(){
   document.getElementById('livEl').style.display=sM==='exam'?'none':'block';
   document.getElementById('tBar').style.display=sM==='exam'?'none':'block';
   var mb=document.getElementById('mBn');
-  if(sM==='exam'){mb.style.display='block';mb.textContent='  Exam Practice  -  no timer, no lives. Work at your own pace.';}
-  else if(sM==='quick'){mb.style.display='block';mb.style.background='rgba(217,119,6,0.07)';mb.style.borderColor='rgba(245,158,11,0.18)';mb.style.color='var(--amber-light)';mb.textContent='  Sprint  -  '+TOT+' questions, '+TL+'s each. Go!';}
+  if(sM==='exam'){mb.style.display='block';mb.textContent='📖 Exam Practice — no timer, no lives. Work at your own pace.';}
+  else if(sM==='quick'){mb.style.display='block';mb.style.background='rgba(217,119,6,0.07)';mb.style.borderColor='rgba(245,158,11,0.18)';mb.style.color='var(--amber-light)';mb.textContent='⚡ Sprint — '+TOT+' questions, '+TL+'s each. Go!';}
   else mb.style.display='none';
   updBar();renderQ();
 }
@@ -1691,9 +1640,9 @@ function renderQ(){
   document.getElementById('prF').style.width=(qI/TOT*100)+'%';
   document.getElementById('prL').textContent='Q '+(qI+1)+'/'+TOT;
   rStreak();
-  var tl=document.getElementById('qTl');tl.className='qlbl '+TM[q.t].cls;tl.textContent='Topic '+q.t.substring(1)+'  -  '+TM[q.t].name;
+  var tl=document.getElementById('qTl');tl.className='qlbl '+TM[q.t].cls;tl.textContent='Topic '+q.t.substring(1)+' — '+TM[q.t].name;
   var tc=document.getElementById('qTc');tc.className='qtc '+TYM[q.type].c;tc.textContent=TYM[q.type].l;
-  var typeLbls={mc:'Multiple choice  -  select the correct answer',typein:'Type your answer below',fitb:'Fill in the blank',order:'Arrange these in the correct order'};
+  var typeLbls={mc:'Multiple choice — select the correct answer',typein:'Type your answer below',fitb:'Fill in the blank',order:'Arrange these in the correct order'};
   document.getElementById('qTypeLbl').textContent=typeLbls[q.type]||'';
   document.getElementById('qTxt').innerHTML=(q.q||'').replace(/\n/g,'<br>');
   if(q.type==='mc')rMC(q);
@@ -1707,11 +1656,11 @@ function renderQ(){
 function rMC(q){var g=document.createElement('div');g.className='mc-g';q.o.forEach(function(opt,i){var b=document.createElement('button');b.className='mc-o';b.innerHTML=opt;(function(idx,btn){b.addEventListener('click',function(){aMC(idx,btn,q);});})(i,b);g.appendChild(b);});document.getElementById('ansA').appendChild(g);}
 function rTI(q){var row=document.createElement('div');row.className='ai-row';var inp=document.createElement('input');inp.type='text';inp.className='ai';inp.autocomplete='off';inp.placeholder='Type your answer...';var sub=document.createElement('button');sub.className='btn-sub';sub.textContent='Submit';(function(i){sub.addEventListener('click',function(){aTI(i,q);});inp.addEventListener('keydown',function(e){if(e.key==='Enter')aTI(i,q);});})(inp);row.appendChild(inp);row.appendChild(sub);document.getElementById('ansA').appendChild(row);var tip=document.createElement('p');tip.className='etip';tip.textContent='Press Enter to submit';document.getElementById('ansA').appendChild(tip);setTimeout(function(){inp.focus();},60);}
 function rFITB(q){var parts=(q.code||'').split('___BLANK___');var line=document.createElement('div');line.className='fitb-line';parts.forEach(function(part,i){if(part){var s=document.createElement('span');s.className='fitb-t';s.textContent=part;line.appendChild(s);}if(i<parts.length-1){var inp=document.createElement('input');inp.className='fitb-i';inp.type='text';inp.autocomplete='off';inp.placeholder='?';inp.id='fI';inp.style.width=Math.max(60,q.a.length*11+20)+'px';inp.addEventListener('keydown',function(e){if(e.key==='Enter')aFITB(inp,q);});line.appendChild(inp);}});document.getElementById('ansA').appendChild(line);var row=document.createElement('div');row.style.marginTop='9px';var sub=document.createElement('button');sub.className='btn-sub';sub.textContent='Submit';sub.addEventListener('click',function(){aFITB(document.getElementById('fI'),q);});row.appendChild(sub);var tip=document.createElement('p');tip.className='etip';tip.textContent='Press Enter to submit';row.appendChild(tip);document.getElementById('ansA').appendChild(row);setTimeout(function(){var el=document.getElementById('fI');if(el)el.focus();},60);}
-function rORD(q){var inst=document.createElement('div');inst.className='o-hint';inst.textContent='Click lines to place them in order. Click a placed line to remove it.';document.getElementById('ansA').appendChild(inst);var bI=sh(q.lines.map(function(l,i){return{idx:i,text:l.text,indent:l.indent};}));var bLbl=document.createElement('div');bLbl.className='o-zlbl';bLbl.textContent='Available lines';document.getElementById('ansA').appendChild(bLbl);var bank=document.createElement('div');bank.className='o-bank';bank.id='oB';bI.forEach(function(line){var el=mkOL(line,false);el.addEventListener('click',function(){if(answered)return;oPlaced.push(line);bank.removeChild(el);rrPlaced(q);updChk(q);});bank.appendChild(el);});document.getElementById('ansA').appendChild(bank);var aLbl=document.createElement('div');aLbl.className='o-zlbl';aLbl.style.marginTop='9px';aLbl.textContent='Your answer  -  click to remove';document.getElementById('ansA').appendChild(aLbl);var slot=document.createElement('div');slot.className='o-slot';slot.id='oS';var ph=document.createElement('div');ph.style.cssText='color:var(--text4);font-size:0.72rem;font-family:var(--mono);padding:5px;text-align:center';ph.textContent='Click lines above to place here';slot.appendChild(ph);document.getElementById('ansA').appendChild(slot);var chk=document.createElement('button');chk.className='btn-chk';chk.id='oC';chk.textContent='Check order';chk.disabled=true;chk.addEventListener('click',function(){chkOrd(q);});document.getElementById('ansA').appendChild(chk);}
-function mkOL(line,placed){var el=document.createElement('div');el.className='o-line'+(placed?' placed':'');el.style.paddingLeft=(11+line.indent*16)+'px';el.innerHTML='<span style="color:var(--text4);font-size:0.65rem;margin-right:4px"> </span><span class="oln"></span><span style="flex:1">'+escH(line.text)+'</span>';return el;}
+function rORD(q){var inst=document.createElement('div');inst.className='o-hint';inst.textContent='Click lines to place them in order. Click a placed line to remove it.';document.getElementById('ansA').appendChild(inst);var bI=sh(q.lines.map(function(l,i){return{idx:i,text:l.text,indent:l.indent};}));var bLbl=document.createElement('div');bLbl.className='o-zlbl';bLbl.textContent='Available lines';document.getElementById('ansA').appendChild(bLbl);var bank=document.createElement('div');bank.className='o-bank';bank.id='oB';bI.forEach(function(line){var el=mkOL(line,false);el.addEventListener('click',function(){if(answered)return;oPlaced.push(line);bank.removeChild(el);rrPlaced(q);updChk(q);});bank.appendChild(el);});document.getElementById('ansA').appendChild(bank);var aLbl=document.createElement('div');aLbl.className='o-zlbl';aLbl.style.marginTop='9px';aLbl.textContent='Your answer — click to remove';document.getElementById('ansA').appendChild(aLbl);var slot=document.createElement('div');slot.className='o-slot';slot.id='oS';var ph=document.createElement('div');ph.style.cssText='color:var(--text4);font-size:0.72rem;font-family:var(--mono);padding:5px;text-align:center';ph.textContent='Click lines above to place here';slot.appendChild(ph);document.getElementById('ansA').appendChild(slot);var chk=document.createElement('button');chk.className='btn-chk';chk.id='oC';chk.textContent='Check order';chk.disabled=true;chk.addEventListener('click',function(){chkOrd(q);});document.getElementById('ansA').appendChild(chk);}
+function mkOL(line,placed){var el=document.createElement('div');el.className='o-line'+(placed?' placed':'');el.style.paddingLeft=(11+line.indent*16)+'px';el.innerHTML='<span style="color:var(--text4);font-size:0.65rem;margin-right:4px">⠿</span><span class="oln"></span><span style="flex:1">'+escH(line.text)+'</span>';return el;}
 function rrPlaced(q){var slot=document.getElementById('oS');if(!slot)return;slot.innerHTML='';if(oPlaced.length===0){var ph=document.createElement('div');ph.style.cssText='color:var(--text4);font-size:0.72rem;font-family:var(--mono);padding:5px;text-align:center';ph.textContent='Click lines above to place here';slot.appendChild(ph);return;}oPlaced.forEach(function(line,pos){var el=mkOL(line,true);el.querySelector('.oln').textContent=(pos+1)+'. ';(function(p){el.addEventListener('click',function(){if(answered)return;oPlaced.splice(p,1);var bank=document.getElementById('oB');var nEl=mkOL(line,false);nEl.addEventListener('click',function(){if(answered)return;oPlaced.push(line);bank.removeChild(nEl);rrPlaced(q);updChk(q);});bank.appendChild(nEl);rrPlaced(q);updChk(q);});})(pos);slot.appendChild(el);});}
 function updChk(q){var b=document.getElementById('oC');if(b)b.disabled=oPlaced.length!==q.lines.length;}
-function chkOrd(q){if(answered)return;var ok=true;for(var i=0;i<q.correctOrder.length;i++){if(!oPlaced[i]||oPlaced[i].idx!==q.correctOrder[i]){ok=false;break;}}answered=true;stopT();var slot=document.getElementById('oS');if(slot){var ls=slot.querySelectorAll('.o-line');ls.forEach(function(el,i){el.classList.remove('placed');el.classList.add(oPlaced[i]&&oPlaced[i].idx===q.correctOrder[i]?'ok':'bad');});}var cs=q.correctOrder.map(function(ci){return q.lines[ci].text;}).join(' -> ');if(ok)hCorr(q);else hWrong(q,false,null,'Correct order: '+cs);}
+function chkOrd(q){if(answered)return;var ok=true;for(var i=0;i<q.correctOrder.length;i++){if(!oPlaced[i]||oPlaced[i].idx!==q.correctOrder[i]){ok=false;break;}}answered=true;stopT();var slot=document.getElementById('oS');if(slot){var ls=slot.querySelectorAll('.o-line');ls.forEach(function(el,i){el.classList.remove('placed');el.classList.add(oPlaced[i]&&oPlaced[i].idx===q.correctOrder[i]?'ok':'bad');});}var cs=q.correctOrder.map(function(ci){return q.lines[ci].text;}).join(' → ');if(ok)hCorr(q);else hWrong(q,false,null,'Correct order: '+cs);}
 function escH(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
 function aMC(idx,btn,q){if(answered)return;answered=true;stopT();var bs=document.getElementById('ansA').querySelectorAll('.mc-o');bs.forEach(function(b){b.disabled=true;});bs[q.c].classList.add('cor');if(idx===q.c)hCorr(q);else{btn.classList.add('wrg');hWrong(q,false);}}
@@ -1726,7 +1675,7 @@ function hCorr(q){
   score+=total;streak++;corr++;if(streak>bStreak)bStreak=streak;
   if(tStats[q.t])tStats[q.t].c++;
   aLog.push({q:q,ok:true,ua:null});
-  var msg='  Correct! +'+total+' pts';if(spd>0)msg+=' (+'+spd+' speed)';if(hintUsed)msg+=' (hint used)';
+  var msg='✓ Correct! +'+total+' pts';if(spd>0)msg+=' (+'+spd+' speed)';if(hintUsed)msg+=' (hint used)';
   showFB('c',msg,q.explain||'');
   document.getElementById('hintB').style.display='none';document.getElementById('skipB').style.display='none';
   updBar();setTimeout(nxtQ,sM==='exam'?2200:1400);
@@ -1736,7 +1685,7 @@ function hWrong(q,timeout,ua,extra){
   var ans=q.type==='mc'?q.o[q.c]:(q.type==='order'?'See explanation':q.a);
   aLog.push({q:q,ok:false,ua:ua||null});
   var expl=(q.explain||'')+(extra?'\n'+extra:'');
-  showFB(timeout?'t':'w',timeout?'  Time\'s up  -  answer: '+ans:'  Not quite  -  answer: '+ans,expl);
+  showFB(timeout?'t':'w',timeout?'⏰ Time\'s up — answer: '+ans:'✗ Not quite — answer: '+ans,expl);
   document.getElementById('hintB').style.display='none';document.getElementById('skipB').style.display='none';
   updBar();
   if(sM!=='exam'&&lives<=0)setTimeout(endGame,1800);else setTimeout(nxtQ,2600);
@@ -1744,8 +1693,8 @@ function hWrong(q,timeout,ua,extra){
 function onTUp(){if(answered)return;answered=true;var q=shuf[qI];if(q.type==='mc'){var bs=document.getElementById('ansA').querySelectorAll('.mc-o');bs.forEach(function(b){b.disabled=true;});bs[q.c].classList.add('cor');}hWrong(q,true);}
 function nxtQ(){qI++;if(qI>=TOT||qI>=shuf.length)endGame();else renderQ();}
 
-document.getElementById('hintB').addEventListener('click',function(){if(answered)return;var q=shuf[qI];hintUsed=true;document.getElementById('hintB').style.display='none';document.getElementById('skipB').style.display='none';showFB('t','  '+q.hint,'');});
-document.getElementById('skipB').addEventListener('click',function(){if(answered)return;answered=true;stopT();var q=shuf[qI];streak=0;if(q.type==='mc'){var bs=document.getElementById('ansA').querySelectorAll('.mc-o');bs.forEach(function(b){b.disabled=true;});bs[q.c].classList.add('cor');}var ans=q.type==='mc'?q.o[q.c]:(q.type==='order'?'See explanation':q.a);aLog.push({q:q,ok:false,ua:'(skipped)'});showFB('t','Skipped  -  answer: '+ans,q.explain||'');document.getElementById('hintB').style.display='none';document.getElementById('skipB').style.display='none';updBar();setTimeout(nxtQ,2600);});
+document.getElementById('hintB').addEventListener('click',function(){if(answered)return;var q=shuf[qI];hintUsed=true;document.getElementById('hintB').style.display='none';document.getElementById('skipB').style.display='none';showFB('t','💡 '+q.hint,'');});
+document.getElementById('skipB').addEventListener('click',function(){if(answered)return;answered=true;stopT();var q=shuf[qI];streak=0;if(q.type==='mc'){var bs=document.getElementById('ansA').querySelectorAll('.mc-o');bs.forEach(function(b){b.disabled=true;});bs[q.c].classList.add('cor');}var ans=q.type==='mc'?q.o[q.c]:(q.type==='order'?'See explanation':q.a);aLog.push({q:q,ok:false,ua:'(skipped)'});showFB('t','Skipped — answer: '+ans,q.explain||'');document.getElementById('hintB').style.display='none';document.getElementById('skipB').style.display='none';updBar();setTimeout(nxtQ,2600);});
 
 function startT(lim){var l=lim||TL;clearInterval(tInt);tLeft=l;uTF(l);tInt=setInterval(function(){tLeft--;uTF(l);if(tLeft<=0){clearInterval(tInt);onTUp();}},1000);}
 function stopT(){clearInterval(tInt);tInt=null;}
@@ -1753,13 +1702,13 @@ function uTF(max){var pct=(tLeft/(max||TL))*100;var tf=document.getElementById('
 function updBar(){
   document.getElementById('tSc').textContent=score;
   document.getElementById('tSt').textContent=streak;
-  var lv='';for(var i=0;i<3;i++)lv+=i<lives?' ':' ';
+  var lv='';for(var i=0;i<3;i++)lv+=i<lives?'♥':'♡';
   document.getElementById('tLv').textContent=lv;
-  if(score>hs){hs=score;try{localStorage.setItem('ictqHi',hs);}catch(e){}}
+  if(score>hs){hs=score;localStorage.setItem('ictqHi',hs);}
 }
-function rStreak(){var row=document.getElementById('strR');row.innerHTML='';for(var i=0;i<5;i++){var d=document.createElement('div');d.className='sdot'+(i<streak?' on':'');row.appendChild(d);}var lbl=document.createElement('span');lbl.className='slbl';lbl.textContent=streak>1?streak+' streak  ':'';row.appendChild(lbl);}
+function rStreak(){var row=document.getElementById('strR');row.innerHTML='';for(var i=0;i<5;i++){var d=document.createElement('div');d.className='sdot'+(i<streak?' on':'');row.appendChild(d);}var lbl=document.createElement('span');lbl.className='slbl';lbl.textContent=streak>1?streak+' streak 🔥':'';row.appendChild(lbl);}
 
-//    END GAME   
+// ── END GAME ──
 function endGame(){
   stopT();
   // save per-topic stats
@@ -1768,7 +1717,7 @@ function endGame(){
       topicHS[t]={corr:tStats[t].c,tot:tStats[t].tot,played:true};
     }
   });
-  try{localStorage.setItem('ictqTopicHS',JSON.stringify(topicHS));}catch(e){}
+  localStorage.setItem('ictqTopicHS',JSON.stringify(topicHS));
 
   document.getElementById('gs').style.display='none';
   var pct=Math.round((corr/TOT)*100);
@@ -1780,12 +1729,12 @@ function endGame(){
   document.getElementById('rHi').textContent=hs;
   document.getElementById('rMo').textContent=ms[sM];
   var em,ti,msg;
-  if(pct>=90){em=' ';ti='Outstanding!';}
-  else if(pct>=75){em=' ';ti='Excellent work!';}
-  else if(pct>=60){em=' ';ti='Good effort!';}
-  else if(pct>=40){em=' ';ti='Keep revising!';}
-  else{em=' ';ti='More practice needed!';}
-  msg=pct>=70?'Strong performance  -  try a different topic mix next!':(pct>=50?'Decent start. Review your wrong answers below.':'Check the revision notes and have another go.');
+  if(pct>=90){em='🏆';ti='Outstanding!';}
+  else if(pct>=75){em='⭐';ti='Excellent work!';}
+  else if(pct>=60){em='👍';ti='Good effort!';}
+  else if(pct>=40){em='📖';ti='Keep revising!';}
+  else{em='💻';ti='More practice needed!';}
+  msg=pct>=70?'Strong performance — try a different topic mix next!':(pct>=50?'Decent start. Review your wrong answers below.':'Check the revision notes and have another go.');
   document.getElementById('rEm').textContent=em;
   document.getElementById('rTi').textContent=ti;
   document.getElementById('rMs').textContent=msg;
@@ -1802,20 +1751,20 @@ function endGame(){
   document.getElementById('rs').style.display='flex';
 }
 
-//    REVIEW   
+// ── REVIEW ──
 document.getElementById('revBtn').addEventListener('click',function(){
   var list=document.getElementById('revL');list.innerHTML='';
   var wrongs=aLog.filter(function(a){return !a.ok;});
-  if(wrongs.length===0){list.innerHTML='<p style="color:var(--text4);text-align:center;padding:40px 0;font-family:var(--mono)">No wrong answers  -  perfect!  </p>';return;}
+  if(wrongs.length===0){list.innerHTML='<p style="color:var(--text4);text-align:center;padding:40px 0;font-family:var(--mono)">No wrong answers — perfect! 🎉</p>';return;}
   wrongs.forEach(function(item,i){
     var q=item.q;
-    var ans=q.type==='mc'?q.o[q.c]:(q.type==='order'?q.correctOrder.map(function(ci){return q.lines[ci].text;}).join(' -> '):q.a);
+    var ans=q.type==='mc'?q.o[q.c]:(q.type==='order'?q.correctOrder.map(function(ci){return q.lines[ci].text;}).join(' → '):q.a);
     var div=document.createElement('div');div.className='rev-item';
     var tChip='<span class="qtc '+TYM[q.type].c+'" style="font-size:0.56rem;padding:1px 6px">'+TYM[q.type].l+'</span>';
     var tpChip='<span class="qlbl '+TM[q.t].cls+'" style="font-size:0.56rem;padding:1px 6px">Topic '+q.t.substring(1)+'</span>';
-    div.innerHTML='<div class="ri-top"><div class="ri-icon"> </div><div class="ri-q">'+tChip+' '+tpChip+' Q'+(i+1)+': '+q.q.replace(/\n/g,'<br>')+'</div></div>'
+    div.innerHTML='<div class="ri-top"><div class="ri-icon">✗</div><div class="ri-q">'+tChip+' '+tpChip+' Q'+(i+1)+': '+q.q.replace(/\n/g,'<br>')+'</div></div>'
       +(item.ua&&item.ua!=='(skipped)'?'<div class="ri-ans ri-w">Your answer: '+escH(item.ua)+'</div>':'')
-      +'<div class="ri-ans ri-c">  Correct: '+escH(ans)+'</div>'
+      +'<div class="ri-ans ri-c">✓ Correct: '+escH(ans)+'</div>'
       +(q.type==='fitb'?'<div class="ri-ans" style="color:var(--text4);background:var(--navy3)">Full line: '+escH(q.code.replace('___BLANK___',q.a))+'</div>':'')
       +'<div class="ri-exp">'+(q.explain||'')+'</div>';
     list.appendChild(div);
@@ -1828,212 +1777,6 @@ document.getElementById('bfR').addEventListener('click',function(){document.getE
 document.getElementById('agBtn').addEventListener('click',startGame);
 document.getElementById('chTBtn').addEventListener('click',function(){document.getElementById('rs').style.display='none';goSetup();});
 document.getElementById('chNBtn').addEventListener('click',function(){document.getElementById('rs').style.display='none';goLanding();});
-
-//    FLASHCARDS   
-var FLASH=[
-  // Topic 1  -  Digital Devices
-  {t:'t1',term:'SIM Card',def:'Subscriber Identity Module  -  identifies the device on the mobile phone network. Required for a phone to connect to a mobile network.'},
-  {t:'t1',term:'Convergence',def:'When the designs of devices change so that they become similar to another. e.g. laptops that flip into tablets, phones that act as cameras and game consoles.'},
-  {t:'t1',term:'GPS',def:'Global Positioning System  -  multiple satellites cross radio signals to pinpoint your location. Does NOT need an internet connection.'},
-  {t:'t1',term:'GIS',def:'Geographical Information System  -  needed to render maps, roads and houses. DOES require an internet connection.'},
-  {t:'t1',term:'Embedded Computing',def:'Computing hardware that is fixed in position and carries out a specialist task. e.g. calculators. Opposite of physical computing.'},
-  {t:'t1',term:'Physical Computing',def:'Interactive systems that can detect and respond to the surrounding environment. e.g. robotics. Opposite of embedded computing.'},
-  {t:'t1',term:'Convergence',def:'When the designs of devices change so they become similar to another. A multifunctional device (e.g. smartphone) is a result of convergence.'},
-  {t:'t1',term:'Virtual Memory',def:'Created when RAM is full. An area of secondary storage is used instead of RAM. Results in much slower performance as data must be fetched from secondary storage.'},
-  {t:'t1',term:'Seek Time',def:'The time taken by the read/write head to locate the area on a hard disk platter where it needs to read or write data.'},
-  {t:'t1',term:'OCR',def:'Optical Character Recognition  -  a scanner that reads and recognises text and numbers from a document.'},
-  {t:'t1',term:'OMR',def:'Optical Mark Recognition  -  a scanner that detects marks. Used for multiple choice exam papers.'},
-  {t:'t1',term:'Peripheral Device',def:'A device that can be connected to a computer to give input, output or storage. e.g. keyboard (input), printer (output), USB drive (storage).'},
-  {t:'t1',term:'Biometric Scanner',def:'Identifies users by physical characteristics. Includes Iris (most secure), Fingerprint (arches/loops/whorls), Face and Voice. Advantage: harder to trick. Disadvantage: stores personal data.'},
-  {t:'t1',term:'Magnetic Strip Card',def:'The least secure type of payment card  -  no PIN is required to read data from it.'},
-  {t:'t1',term:'NFC / RFID',def:'Near Field Communication / Radio Frequency Identification. Used for contactless payments (e.g. Apple Pay). When scanned, ID is linked to database records.'},
-  {t:'t1',term:'Dot Matrix Printer',def:'Slowest printer type. Cheapest cost per copy. Lowest quality. Very loud. Can produce carbon copies.'},
-  {t:'t1',term:'Laser Printer',def:'Fastest printer type. Medium cost per copy. Highest quality output. Works by a drum emitting an electrical charge. Most expensive upfront cost.'},
-  {t:'t1',term:'RAM',def:'Random Access Memory  -  volatile, meaning data is lost when power is lost. Stores programs currently in use. Bigger RAM = better performance without virtual memory.'},
-  {t:'t1',term:'ROM',def:'Read Only Memory  -  non-volatile, meaning data is kept when power is lost. Stores boot data. Cannot normally be changed.'},
-  {t:'t1',term:'PROM',def:'Programmable Read Only Memory  -  data can be written once only and cannot be erased afterwards.'},
-  {t:'t1',term:'EPROM',def:'Erasable Programmable ROM  -  data can be erased and rewritten by exposing it to UV light.'},
-  {t:'t1',term:'EEPROM',def:'Electrically Erasable Programmable ROM  -  data can be erased and rewritten by applying high voltage to a specific pin. Developed into flash memory.'},
-  {t:'t1',term:'Flash Memory',def:'A type of EEPROM. No moving parts  -  making it portable and energy efficient. Used in USB drives, SSDs and SD cards.'},
-  {t:'t1',term:'Processor Cycle',def:'The cycle by which a processor Fetches instructions from memory, Decodes them, and Executes them.'},
-  {t:'t1',term:'Clock Speed',def:'The number of times per second a processor can carry out one or more instructions. Measured in Hertz (Hz). Higher clock speed = faster processor.'},
-  {t:'t1',term:'Open-Source Software',def:'Everything is available to the user including the source code. They can distribute, modify and resell it freely.'},
-  {t:'t1',term:'Proprietary Software',def:'The user cannot distribute or edit the software under their own name. e.g. Microsoft Office. Freeware is a type offered for free.'},
-  {t:'t1',term:'Utility Software',def:'A type of system software that allows the user to maintain the OS and carry out configuration tasks. Examples: backup, defragmentation, compression, formatting.'},
-  {t:'t1',term:'Defragmentation',def:'Reorders the fragments of data on a disk so they are closer together and easier to locate. Improves disk access speed. Usually happens automatically.'},
-  {t:'t1',term:'8 bits = 1 byte',def:'A bit is the smallest unit of data (0 or 1). A nibble = 4 bits. A byte = 8 bits. 1 KiB = 1024 bytes. 1 GiB = 1024  bytes.'},
-
-  // Topic 2  -  Connectivity
-  {t:'t2',term:'Bandwidth',def:'The amount of data transferred per second. High bandwidth = rapid uploads and downloads, complex tasks happen quicker.'},
-  {t:'t2',term:'Latency',def:'The time it takes data to travel between two devices. Low latency = no lag, no delay in live events or online gaming.'},
-  {t:'t2',term:'Buffer',def:'An area of temporary storage used when streaming. As you watch, data fills the buffer. If the buffer empties the video pauses until it refills.'},
-  {t:'t2',term:'LAN',def:'Local Area Network  -  covers a small geographical area (e.g. a school). Faster and more secure than a WAN.'},
-  {t:'t2',term:'WAN',def:'Wide Area Network  -  covers a larger area than a LAN. The internet is the largest WAN. WANs connect LANs to each other. Slower than LAN.'},
-  {t:'t2',term:'PAN',def:'Personal Area Network  -  a group of devices connected near one individual. A WPAN (Wireless PAN) is a fully wireless version.'},
-  {t:'t2',term:'Tethering',def:'When a host device shares its mobile broadband (4G/5G) with another device. Bandwidth is shared equally  -  both devices experience slowdowns.'},
-  {t:'t2',term:'IP Address',def:'Not fixed  -  changes with the network. Assigned by DHCP. IPv4 = 8 numbers with dots. IPv6 = 8 groups of 4 hexadecimal characters with colons.'},
-  {t:'t2',term:'MAC Address',def:'Fixed  -  unique to the device and its NIC. 6 pairs of numbers/letters. First 3 pairs = manufacturer. Last 3 pairs = specific device.'},
-  {t:'t2',term:'Router',def:'Stores all connected devices\' IP addresses and forwards network traffic using the fastest route.'},
-  {t:'t2',term:'Switch',def:'Has many ports to connect devices with cables within a network.'},
-  {t:'t2',term:'Gateway',def:'Connects LANs to WANs. Firewalls are typically found at gateways.'},
-  {t:'t2',term:'WAP',def:'Wireless Access Point  -  connects Wi-Fi devices to a wired network wirelessly. Often built into routers.'},
-  {t:'t2',term:'Booster',def:'Amplifies a network signal so it can cover larger distances.'},
-  {t:'t2',term:'Peer-to-peer Network',def:'Devices share resources directly with each other  -  no server required.'},
-  {t:'t2',term:'Client-server Network',def:'All devices (clients) connect to one central server. Benefits: roaming profiles, centralised backup, admin control over access rights, shared applications.'},
-  {t:'t2',term:'Caesar Cipher',def:'Shifts all data characters by a fixed number (the key). Very easy to crack  -  the weakest form of encryption.'},
-  {t:'t2',term:'Symmetric Key Encryption',def:'The same key is used to both encrypt and decrypt data. Both sender and receiver must share this key securely.'},
-  {t:'t2',term:'Public Key Encryption',def:'Uses two keys  -  a public key (shared openly) to encrypt data, and a private key (held only by the recipient) to decrypt it. Most secure.'},
-  {t:'t2',term:'WEP',def:'Wireless Encryption Protocol  -  all network data encrypted with one shared key. Easy for eavesdroppers to crack.'},
-  {t:'t2',term:'WPA',def:'Wi-Fi Protected Access  -  updated WEP. Every device AND every data packet gets a unique key, making it much harder to crack.'},
-  {t:'t2',term:'VPN',def:'Virtual Private Network  -  creates an encrypted tunnel for secure remote access to a LAN. Used for: secure payments, avoiding surveillance, working from home, accessing geo-locked content.'},
-  {t:'t2',term:'Firewall',def:'Found at gateways. Controls what can enter and leave the network  -  like a cell membrane filtering traffic.'},
-  {t:'t2',term:'Eavesdropper',def:'Someone who has unauthorised access to a network but remains within it, silently monitoring activity without being detected.'},
-  {t:'t2',term:'Filter Software',def:'Allows administrators to control what content users can access by URL. Whitelist = allowed. Blacklist = denied. Unlisted = automatically whitelisted.'},
-  {t:'t2',term:'DHCP',def:'Dynamic Host Configuration Protocol  -  automatically assigns IP addresses to devices when they connect to a network.'},
-  {t:'t2',term:'Roaming Profiles',def:'Allow users to log in to their account from any device on a client-server network and access their files, settings and software.'},
-
-  // Topic 3  -  Operating Online
-  {t:'t3',term:'Phishing',def:'Sending fraudulent emails or creating fake websites to trick people into revealing personal information (e.g. passwords, card details).'},
-  {t:'t3',term:'Spear Phishing',def:'A targeted phishing attack  -  messages are personalised and aimed at a small, specific group of people.'},
-  {t:'t3',term:'Smishing',def:'Phishing carried out through SMS text messages rather than email.'},
-  {t:'t3',term:'Pharming',def:'Creates fake websites OR alters domain name servers to redirect traffic to fraudulent sites  -  even when the correct URL is typed.'},
-  {t:'t3',term:'Ransomware',def:'Malware that encrypts a victim\'s files and demands a ransom payment to restore access. Paying does not guarantee files are restored.'},
-  {t:'t3',term:'Spyware',def:'Malware that monitors all forms of communication and interaction on a device. Keyloggers are a specific example.'},
-  {t:'t3',term:'Keylogger',def:'A type of spyware that records every keystroke made by a user, allowing criminals to capture passwords and personal data silently.'},
-  {t:'t3',term:'Trojan',def:'Malware that appears to be a legitimate application but is secretly stealing data, spying on the user, or crashing the computer.'},
-  {t:'t3',term:'Adware',def:'Malware that peppers the user with unwanted adverts in an attempt to get them to spend money.'},
-  {t:'t3',term:'Scareware',def:'Malware that displays alarming (but false) security warnings to trick the user into purchasing a fake security program.'},
-  {t:'t3',term:'Botnet',def:'A network of infected devices used to spread malware. Criminals install them on the weakest devices  -  once infected, those devices infect others.'},
-  {t:'t3',term:'CAPTCHA',def:'Completely Automated Public Turing test to tell Computers and Humans Apart  -  identifies whether a user is human or a bot using text, images or puzzles.'},
-  {t:'t3',term:'HTTPS',def:'Hypertext Transfer Protocol Secure  -  keeps communications private and provides security. Uses SSL (Secure Socket Layer) and TLS (Transport Layer Security).'},
-  {t:'t3',term:'Full Backup',def:'Creates a copy of ALL files every time it runs. Most complete but most time-consuming and storage-heavy.'},
-  {t:'t3',term:'Differential Backup',def:'Copies only files that have changed since the last FULL backup. Larger than incremental but faster to restore from.'},
-  {t:'t3',term:'Incremental Backup',def:'Copies only files that have changed since the last backup of ANY type. Smallest each run but more complex to restore from.'},
-  {t:'t3',term:'Digital Divide',def:'The gap between people who have access to digital devices and the internet and those who do not. Causes include location, income, age, disability and politics.'},
-  {t:'t3',term:'Digital Footprint',def:'All the data a user creates online which is recorded and stored  -  including posts, searches, purchases and website visits.'},
-  {t:'t3',term:'Online Community',def:'A group of people with a shared common interest who communicate online. Each has a target audience, a function and features.'},
-  {t:'t3',term:'VLE',def:'Virtual Learning Environment  -  allows teachers and students to use learning and assessment materials online. Features: gradebooks, assignment submission, auto-graded quizzes.'},
-  {t:'t3',term:'Wiki',def:'An online community website prepared by several users who can all add or edit content. e.g. Wikipedia. Features: member accounts, edit buttons, search tools.'},
-  {t:'t3',term:'Forum',def:'An online community where members come together for structured discussions organised into threads. Has moderators and administrators.'},
-  {t:'t3',term:'Social Bookmarking',def:'Uses tags to categorise web documents and URLs so that other people can find content by searching for those tags.'},
-  {t:'t3',term:'Moderator',def:'A forum role  -  can allow or block posts and members.'},
-  {t:'t3',term:'Administrator',def:'A forum role with all moderator powers, plus the ability to promote members to moderators or demote moderators back to members.'},
-  {t:'t3',term:'Thread',def:'A series of messages on a forum that all concern the same subject.'},
-  {t:'t3',term:'Geotagging',def:'When location data is automatically embedded into photographs. A privacy risk as it can reveal where a user lives or spends time. Should always be deactivated.'},
-  {t:'t3',term:'Copyright',def:'A legal power that gives the creator of an original work the sole authority to use and distribute it. Copying or distributing bought content without permission is illegal.'},
-  {t:'t3',term:'ANPR',def:'Automatic Number Plate Recognition  -  a monitoring system that automatically reads vehicle licence plates from surveillance cameras.'},
-  {t:'t3',term:'Data Protection  -  Company Obligations',def:'Data must be: used fairly and lawfully, used for limited stated purposes, adequate and relevant, not kept longer than necessary, and handled securely.'},
-  {t:'t3',term:'Data Protection  -  Individual Rights',def:'Individuals can: access their data, have inaccurate data rectified, claim compensation, prevent direct marketing processing, and object to automated decisions.'},
-  {t:'t3',term:'RSI',def:'Repetitive Strain Injury  -  wrist/hand pain caused by using devices incorrectly with poor posture over time. Prevented by using ergonomic devices and support.'},
-  {t:'t3',term:'Primary Source',def:'Data you own yourself  -  e.g. photos you have taken, articles you have written.'},
-  {t:'t3',term:'Secondary Source',def:'Data owned by someone else that you are using  -  e.g. a radio programme, TV show or book.'},
-
-  // Topic 4  -  Online Goods & Services
-  {t:'t4',term:'Transactional Data',def:'Data that is sent between devices during online activity. Usually stored in cookies. Includes: time/date, IP address, products viewed, basket items, buttons pressed.'},
-  {t:'t4',term:'Session Cookie',def:'Only stored until a webpage is closed. Deleted automatically when the browser or tab is closed.'},
-  {t:'t4',term:'Persistent Cookie',def:'Records internet use over time. Used to keep users logged in. Allows advertisers to track data across multiple visits.'},
-  {t:'t4',term:'Third Party Cookie',def:'Placed by ad servers (not the website itself) to personalise user experience through targeted marketing. Used on pages with banner advertisements.'},
-  {t:'t4',term:'Targeted Marketing',def:'1. Social networks store and analyse user data. 2. Data sold to advertisers. 3. Advertisers target relevant sponsored posts based on age, gender and browsing history.'},
-  {t:'t4',term:'The Cloud',def:'The internet when used for providing software or space to store information rather than local storage. Hosted applications and online storage are both cloud-based services.'},
-  {t:'t4',term:'Hosted Application',def:'An application that runs on an online server and requires an internet connection. Affected by bandwidth and latency. Enables collaboration. e.g. Google Docs.'},
-  {t:'t4',term:'Locally Installed Software',def:'Software installed directly on a device. Does not require internet. Not affected by bandwidth or latency. But uses device storage space.'},
-  {t:'t4',term:'Scalable Storage',def:'Cloud storage capacity that can be increased on demand as storage needs grow  -  a key advantage over fixed-capacity local storage.'},
-  {t:'t4',term:'Product Catalogue',def:'A list of products on a shopping site storing: image, description, price, ratings, popularity, product code and stock level.'},
-  {t:'t4',term:'Analytics',def:'Information that results from the analysis of data. Used by individuals and organisations to find the most effective methods of communication and to grow their reach.'},
-];
-
-var flashDeck=[], flashIdx=0, flashFlipped=false, flashTopic='all';
-
-var TOPIC_CLS={t1:'tl1',t2:'tl2',t3:'tl3',t4:'tl4'};
-var TOPIC_NAME={t1:'Topic 1  -  Digital Devices',t2:'Topic 2  -  Connectivity',t3:'Topic 3  -  Operating Online',t4:'Topic 4  -  Online Goods & Services'};
-
-function goFlash(){
-  hideAll();
-  document.getElementById('flashScreen').style.display='block';
-  setFlashTopic('all', document.querySelector('#flashTabs button'));
-  window.scrollTo(0,0);
-}
-
-function setFlashTopic(t, btn){
-  flashTopic=t;
-  document.querySelectorAll('#flashTabs button').forEach(function(b){
-    b.classList.remove('active');
-    ['ntab1','ntab2','ntab3','ntab4'].forEach(function(c){if(b.classList.contains(c))b.classList.remove('active');});
-  });
-  btn.classList.add('active');
-  flashDeck = t==='all' ? FLASH.slice() : FLASH.filter(function(f){return f.t===t;});
-  flashDeck = sh(flashDeck);
-  flashIdx=0; flashFlipped=false;
-  renderFlash();
-}
-
-function shuffleFlash(){
-  flashDeck=sh(flashDeck);
-  flashIdx=0; flashFlipped=false;
-  renderFlash();
-}
-
-function flashNav(dir){
-  flashFlipped=false;
-  flashIdx=(flashIdx+dir+flashDeck.length)%flashDeck.length;
-  renderFlash();
-}
-
-function flipCard(){
-  flashFlipped=!flashFlipped;
-  var card=document.getElementById('flashCard');
-  var defEl=document.getElementById('flashDef');
-  var sideEl=document.getElementById('flashSide');
-  if(flashFlipped){
-    defEl.style.display='block';
-    sideEl.textContent='DEFINITION';
-    card.style.borderColor='rgba(139,92,246,0.4)';
-    card.style.background='rgba(124,58,237,0.06)';
-  } else {
-    defEl.style.display='none';
-    sideEl.textContent='TAP TO REVEAL DEFINITION';
-    card.style.borderColor='var(--border)';
-    card.style.background='var(--navy2)';
-  }
-}
-
-function renderFlash(){
-  if(flashDeck.length===0){
-    document.getElementById('flashTerm').textContent='No cards for this topic';
-    document.getElementById('flashDef').textContent='';
-    document.getElementById('flashCount').textContent='0 / 0';
-    document.getElementById('flashProg').style.width='0%';
-    return;
-  }
-  var card=flashDeck[flashIdx];
-  var termEl=document.getElementById('flashTerm');
-  var defEl=document.getElementById('flashDef');
-  var sideEl=document.getElementById('flashSide');
-  var topicEl=document.getElementById('flashTopic');
-  var cardEl=document.getElementById('flashCard');
-
-  termEl.textContent=card.term;
-  defEl.innerHTML=card.def;
-  sideEl.textContent='TAP TO REVEAL DEFINITION';
-  defEl.style.display='none';
-  cardEl.style.borderColor='var(--border)';
-  cardEl.style.background='var(--navy2)';
-  flashFlipped=false;
-
-  topicEl.className='qlbl '+TOPIC_CLS[card.t];
-  topicEl.textContent=TOPIC_NAME[card.t];
-
-  document.getElementById('flashCount').textContent=(flashIdx+1)+' / '+flashDeck.length;
-  document.getElementById('flashProg').style.width=(((flashIdx+1)/flashDeck.length)*100)+'%';
-}
-
-// Keyboard navigation for flashcards
-document.addEventListener('keydown',function(e){
-  if(document.getElementById('flashScreen').style.display==='none') return;
-  if(e.key==='ArrowRight'||e.key==='ArrowDown') flashNav(1);
-  else if(e.key==='ArrowLeft'||e.key==='ArrowUp') flashNav(-1);
-  else if(e.key===' '||e.key==='Enter'){e.preventDefault();flipCard();}
-});
 </script>
 </body>
 </html>
